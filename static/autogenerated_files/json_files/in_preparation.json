@@ -1,0 +1,20 @@
+{
+    "silvana": {
+        "author": "Costa, Bernardo F. P. and Pesenti, Silvana M. and Targino, Rodrigo S",
+        "title": "Risk Parity with Non-Gaussian Risks",
+        "ENTRYTYPE": "book",
+        "ID": "silvana"
+    },
+    "david": {
+        "author": "Evangelista, D. and Saporito, Yuri F. and Targino, Rodrigo S.",
+        "title": "The risk profile of stock indexes",
+        "ENTRYTYPE": "book",
+        "ID": "david"
+    },
+    "sam": {
+        "author": "Livingstone, Samuel and Targino, Rodrigo S.",
+        "title": "Approximate Bayesian Computation for factor copulas",
+        "ENTRYTYPE": "book",
+        "ID": "sam"
+    }
+}

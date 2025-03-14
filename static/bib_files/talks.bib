@@ -1,0 +1,458 @@
+# bibtex2html -d -r presentations.bib #to create a static html
+# academic import --bibtex ~/Dropbox/Curriculum/bib_files/presentations.bib --publication-dir talk --overwrite -v
+
+@article{pres53,
+  author = {Targino, Rodrigo S.},
+  title = {Risk Budgeting Portfolios from Simulations},
+  journal = {Escola de Séries Temporais, Florianópolis, Brazil},
+  year = {2023},
+  month = {07},
+  day = {31},
+  url = {https://www.dropbox.com/s/6lhsecdr5udtjzj/risk_parity.pdf?dl=0},
+  abstract = {Risk budgeting is a portfolio strategy where each asset contributes a prespecified amount to the aggregate risk of the portfolio. In this work, we propose a numerical framework that uses only simulations of returns for estimating risk budgeting portfolios. Specifically, we provide a Sample Average Approximation (SAA) algorithm with cutting planes, and a Stochastic Gradient Decent algorithm, tailored to the risk budgeting portfolio for the Expected Shortfall. We illustrate different risk budgeting portfolios, constructed using a especially designed Julia package, on real financial data and compare it to classical portfolio strategies.}
+}
+
+@article{pres52,
+  author = {Targino, Rodrigo S.},
+  title = {Avoiding zero probability events when computing Value at Risk contributions},
+  journal = {SIAM Financial Mathematics 2023, Philadelphia, USA},
+  year = {2023},
+  month = {06},
+  day = {06},
+  url = {https://www.dropbox.com/s/f3p11iquw0i4b6m/slides_Euler_Malliavin.pdf?dl=0},
+  abstract = {In this talk I will discuss the process of risk allocation for a generic multivariate model when the risk measure is chosen as the Value-at-Risk (VaR). We recast the traditional Euler contributions from an expectation conditional on an event of zero probability to a ratio involving conditional expectations whose conditioning events have strictly positive probability. We derive an analytical form of the proposed representation of VaR contributions for various parametric models. Our numerical experiments show that the estimator using this novel representation outperforms the standard Monte Carlo estimator in terms of bias and variance. Moreover, unlike the existing estimators, the proposed estimator is free from hyperparameters under a parametric setting.}
+}
+
+@article{pres51,
+  author = {Targino, Rodrigo S.},
+  title = {Risk Budgeting Portfolios from Simulations},
+  journal = {Financial and Actuarial Mathematics (FAM) seminar, UCLA},
+  year = {2023},
+  month = {05},
+  day = {09},
+  url = {https://www.dropbox.com/s/dxk2ni9n8q43tlg/risk_parity.pdf?dl=0},
+  abstract = {Risk budgeting is a portfolio strategy where each asset contributes a prespecified amount to the aggregate risk of the portfolio. In this work, we propose a numerical framework that uses only simulations of returns for estimating risk budgeting portfolios. Specifically, we provide a Sample Average Approximation (SAA) algorithm with cutting planes, and a Stochastic Gradient Decent algorithm, tailored to the risk budgeting portfolio for the Expected Shortfall. We illustrate different risk budgeting portfolios, constructed using a especially designed Julia package, on real financial data and compare it to classical portfolio strategies.}
+}
+
+@article{pres50,
+  author = {Targino, Rodrigo S.},
+  title = {Transform MCMC schemes for sampling intractable factor copula models},
+  journal = {School of Mathematical and Statistical Sciences, ASU},
+  year = {2023},
+  month = {04},
+  day = {21},
+  url = {https://www.dropbox.com/s/9nzdzxbplwml8sb/Slides-Targino.pdf?dl=0},
+  abstract = {In financial risk management, modelling dependency within a random vector is crucial and a standard approach is the use of a copula model. A flexible family of copulas, known as the factor copulas, is formed by the copulas extracted from factor models. Sampling from a factor copula is equivalent to sampling from the factor model and applying the cumulative distribution function (c.d.f.) to each component of the sample. Nonetheless, in many models of interest the c.d.f.'s are not explicitly known. In this talk I'll present theoretical and numerical properties of a transform Markov Chain Monte Carlo (MCMC) scheme developed to efficiently compute expectations conditional to rare events in which the unconditional distribution is given by an intractable factor copula.}
+}
+
+@article{pres49,
+  author = {Targino, Rodrigo S.},
+  title = {Transform MCMC schemes for sampling intractable factor copula models},
+  journal = {Department of Statistics and Applied Probability (PSTAT), UCSB},
+  year = {2022},
+  month = {11},
+  day = {02},
+  url = {https://www.dropbox.com/s/603yuetkg9sodjr/Slides-Targino.pdf?dl=0},
+  abstract = {In financial risk management, modelling dependency within a random vector is crucial and a standard approach is the use of a copula model. A flexible family of copulas, known as the factor copulas, is formed by the copulas extracted from factor models. Sampling from a factor copula is equivalent to sampling from the factor model and applying the cumulative distribution function (c.d.f.) to each component of the sample. Nonetheless, in many models of interest the c.d.f.'s are not explicitly known. In this talk I'll present theoretical and numerical properties of a transform Markov Chain Monte Carlo (MCMC) scheme developed to efficiently compute expectations conditional to rare events in which the unconditional distribution is given by an intractable factor copula.}
+}
+
+
+@article{pres48,
+  author = {Targino, Rodrigo S.},
+  title = {Risk Budgeting Portfolios from Simulations},
+  journal = {Duncan Chair Actuarial Science Research Day, UCSB},
+  year = {2022},
+  month = {09},
+  day = {28},
+  url = {https://www.dropbox.com/s/xomrmvececbwovu/risk_parity.pdf?dl=0},
+  abstract = {Risk budgeting is a portfolio strategy where each asset contributes a prespecified amount to the aggregate risk of the portfolio. In this work, we propose a numerical framework that uses only simulations of returns for estimating risk budgeting portfolios. Specifically, we provide a Sample Average Approximation (SAA) algorithm with cutting planes, and a Stochastic Gradient Decent algorithm, tailored to the risk budgeting portfolio for the Expected Shortfall. We illustrate different risk budgeting portfolios, constructed using a especially designed Julia package, on real financial data and compare it to classical portfolio strategies.}
+}
+
+@article{pres47,
+  author = {Targino, Rodrigo S.},
+  title = {Risk Budgeting Portfolios from Simulations},
+  journal = {Research in Options (RiO), Rio de Janeiro, Brazil},
+  year = {2022},
+  month = {08},
+  day = {23},
+  url = {https://www.dropbox.com/s/sq092ax1xb0pqg9/risk_parity.pdf?dl=0},
+  abstract={Risk budgeting is a portfolio strategy where each asset contributes a prespecified amount to the aggregate risk of the portfolio. In this work, we propose a numerical framework that uses only simulations of returns for estimating risk budgeting portfolios. Specifically, we provide a Sample Average Approximation (SAA) algorithm with cutting planes, and a Stochastic Gradient Decent algorithm, tailored to the risk budgeting portfolio for the Expected Shortfall. We illustrate different risk budgeting portfolios, constructed using a especially designed Julia package, on real financial data and compare it to classical portfolio strategies.}
+  }
+
+@article{pres46,
+  author = {Targino, Rodrigo S.},
+  title = {Transform MCMC schemes for sampling intractable factor copula models},
+  journal = {Department of Statistical Sciences, UCL,  London, UK},
+  year = {2022},
+  month = {06},
+  day = {23},
+  url = {https://www.dropbox.com/s/11ga78rfh19xrl6/Slides-Targino.pdf?dl=0},
+  abstract = {In financial risk management, modelling dependency within a random vector is crucial and a standard approach is the use of a copula model. A flexible family of copulas, known as the factor copulas, is formed by the copulas extracted from factor models. Sampling from a factor copula is equivalent to sampling from the factor model and applying the cumulative distribution function (c.d.f.) to each component of the sample. Nonetheless, in many models of interest the c.d.f.'s are not explicitly known. In this talk I'll present theoretical and numerical properties of a transform Markov Chain Monte Carlo (MCMC) scheme developed to efficiently compute expectations conditional to rare events in which the unconditional distribution is given by an intractable factor copula.}
+}
+
+@article{pres45,
+  author = {Targino, Rodrigo S.},
+  title = {Transform MCMC schemes for sampling intractable factor copula models},
+  journal = {Department of Statistical Sciences, UFRJ,  Rio de Janeiro, Brazil},
+  year = {2022},
+  month = {05},
+  day = {25},
+  url = {https://www.dropbox.com/s/uxm6x4mnfcnq0i4/Slides-Targino.pdf?dl=0},
+  abstract = {In financial risk management, modelling dependency within a random vector is crucial and a standard approach is the use of a copula model. A flexible family of copulas, known as the factor copulas, is formed by the copulas extracted from factor models. Sampling from a factor copula is equivalent to sampling from the factor model and applying the cumulative distribution function (c.d.f.) to each component of the sample. Nonetheless, in many models of interest the c.d.f.'s are not explicitly known. In this talk I'll present theoretical and numerical properties of a transform Markov Chain Monte Carlo (MCMC) scheme developed to efficiently compute expectations conditional to rare events in which the unconditional distribution is given by an intractable factor copula.}
+}
+
+@article{pres44,
+  author = {Targino, Rodrigo S.},
+  title = {Risk Budgeting Portfolios from Simulations},
+  journal = {Data Science and Quantitative Strategies reading group (Itaú-Unibanco)},
+  year = {2021},
+  month = {11},
+  day = {11},
+  url = {https://www.dropbox.com/s/5kzzbouwped2yaj/20211111.pdf?dl=0},
+  abstract = {Large pension plans face the difficulty of investing premiums in a financially prudent but economically efficient way. An investment concept used in industry, e.g., by pension funds, is *risk budgeting portfolios* (RBP). RBP are diversified portfolios where the diversification is on the level of the risk contribution of each asset to the risk of the total portfolio loss. In this work, we assess the risk of the portfolio via a coherent risk measure, such as the Expected Shortfall. The risk contribution of an asset, is then the added risk of marginally increasing the portfolio's position in that asset. Hence, risk budgeting portfolios are diversified in terms of the risk stemming from each asset and therefore ideal for pension plans which face stringent investment requirements.
+  Advances in the academic literature and practical implementations of RBP strategies, however, make the strong assumption that assets are multivariate Gaussian. We propose an efficient stochastic optimization framework that calculates RBP for assets with arbitrary joint distribution. Moreover, the RBP is constructed using only sampled scenarios, making it applicable in a variety of settings such as data-driven statistical models, arbitrary dependency structures, and internal loss models.}
+}
+
+@article{pres43,
+  author = {Targino, Rodrigo S.},
+  title = {Avoiding zero probability events when computing Value at Risk allocations},
+  journal = {24th International Congress on Insurance: Mathematics and Economics },
+  year = {2021},
+  month = {07},
+  day = {09},
+  url = {https://www.dropbox.com/s/junsmax00j4nfoj/slides_Euler_Malliavin.pdf?dl=0},
+  abstract = {This talk is concerned with the process of risk allocation for a generic multivariate model when the risk measure is chosen as the Value-at-Risk (VaR). We recast the traditional Euler contributions from an expectation conditional to an event of zero probability to a ratio of conditional expectations, where both the numerator and the denominator's conditioning events have positive probability. For several different models we show empirically that the estimator using this novel representation has no perceivable bias and variance smaller than a standard estimator used in practice.}
+}
+
+@article{pres42,
+  author = {Targino, Rodrigo S.},
+  title = {Risk Budgeting Portfolios from Simulations},
+  journal = {3rd Insurance Data Science Conference},
+  year = {2021},
+  month = {06},
+  day = {16},
+  url = {https://www.dropbox.com/s/czqfnqsu9hlwwf9/20210616_short.pdf?dl=0},
+  abstract = {Large pension plans face the difficulty of investing premiums in a financially prudent but economically efficient way. An investment concept used in industry, e.g., by pension funds, is *risk budgeting portfolios* (RBP). RBP are diversified portfolios where the diversification is on the level of the risk contribution of each asset to the risk of the total portfolio loss. In this work, we assess the risk of the portfolio via a coherent risk measure, such as the Expected Shortfall. The risk contribution of an asset, is then the added risk of marginally increasing the portfolio's position in that asset. Hence, risk budgeting portfolios are diversified in terms of the risk stemming from each asset and therefore ideal for pension plans which face stringent investment requirements.
+  Advances in the academic literature and practical implementations of RBP strategies, however, make the strong assumption that assets are multivariate Gaussian. We propose an efficient stochastic optimization framework that calculates RBP for assets with arbitrary joint distribution. Moreover, the RBP is constructed using only sampled scenarios, making it applicable in a variety of settings such as data-driven statistical models, arbitrary dependency structures, and internal loss models.}
+}
+
+@article{pres41,
+  author = {Targino, Rodrigo S.},
+  title = {Transform MCMC schemes for sampling intractable factor copula models},
+  journal = {RESIM 2021 : 13th International Workshop on Rare-Event Simulation},
+
+  year = {2021},
+  month = {05},
+  day = {20},
+  url = {https://www.dropbox.com/s/7bphf9w4h5wobdd/Slides-Targino_RESIM-May2021.pdf?dl=0},  
+  abstract = {In financial risk management, modelling dependency within a random vector is crucial and a standard approach is the use of a copula model. A flexible family of copulas, known as the factor copulas, is formed by the copulas extracted from factor models. Sampling from a factor copula is equivalent to sampling from the factor model and applying the cumulative distribution function (c.d.f.) to each component of the sample. Nonetheless, in many models of interest the c.d.f.'s are not explicitly known. In this talk I'll present theoretical and numerical properties of a transform Markov Chain Monte Carlo (MCMC) scheme developed to efficiently compute expectations conditional to rare events in which the unconditional distribution is given by an intractable factor copula.}
+}
+
+@article{pres40,
+  author = {Targino, Rodrigo S.},
+  title = {The economic uncertainty index: the Brazilian case, its relations with the freedom of the press and new estimation methods},
+  journal = {School of Economics USP-RP},
+  year = {2020},
+  month = {10},
+  day = {1},
+  url = {https://www.dropbox.com/s/iz7w495qe5xknpz/slides_FOTP.pdf?dl=0},
+  abstract = {In this talk I will present the recent developments made by our group at FGV regarding the economic uncertainty index. In the first part, accessible to the general public, I will describe the economic uncertainty index and its Brazilian version, developed and calculated by FGV. In the second part, we use Bayesian inference methods for missing data in asynchronous freedom of the press data and show that the economic uncertainty index is, in a way, orthogonal to the volatility of the stock indexes of the local markets. In the last part of the talk I will present our advances in the direction of improving this and other word-based indexes, where we use Bayesian methods of particle filters to understand the importance of each word in the construction of an index.}
+}
+
+@article{pres39,
+  author = {Targino, Rodrigo S.},
+  title = {Round table on the job market for data scientists},
+  journal = {3ª Semana da Engenharia Matemática e Matemática Aplicada da UFRJ},
+  year = {2020},
+  month = {07},
+  day = {27},
+  url = {https://youtu.be/ennu0cEwbLI?t=27639}
+}
+
+@article{pres38,
+  author = {Targino, Rodrigo S.},
+  title = {Avoiding zero probability events when computing Value at Risk allocations},
+  journal = {One World Actuarial Research Seminar (OWARS)},
+  year = {2020},
+  month = {07},
+  day = {15},
+  url = {https://www.dropbox.com/s/qvas8cglqn8s16l/slides_Euler_Malliavin.pdf?dl=0}
+}
+
+@article{pres37,
+  author = {Targino, Rodrigo S.},
+  title = {Understanding Economic Policy Uncertainty index using semi-automatic news classification},
+  journal = {Encontro Brasileiro de Estat\'istica Bayesiana (EBEB), Maresias, Brazil},
+  year = {2020},
+  month = {03},
+  day = {11},
+  url = {https://www.dropbox.com/s/lvvb6wvs230o8n9/EPU_particle_filters.pdf?dl=0}
+}
+
+@article{pres36,
+  author = {Targino, Rodrigo S.},
+  title = {Understanding Economic Policy Uncertainty index using semi-automatic news classification},
+  journal = {\'Ecole Polytechnique,  Paris, France},
+  year = {2019},
+  url = {https://www.dropbox.com/s/1fujxpi3it6r09j/EPU_particle_filters.pdf?dl=0}
+}
+
+@article{pres35,
+  author = {Targino, Rodrigo S.},
+  title = {Understanding Economic Policy Uncertainty index using semi-automatic news classification},
+  journal = {4th International Workshop in Financial Econometrics*,  Macei\'o, Brazil},
+  year = {2019}
+}
+
+@article{pres34,
+  author = {Targino, Rodrigo S.},
+  title = {Understanding Economic Policy Uncertainty index using semi-automatic news classification},
+  journal = {Escola de S\'{e}ries Temporais e Econometria,  Gramado, Brazil},
+  year = {2019}
+}
+
+@article{pres33,
+  author = {Targino, Rodrigo S.},
+  title = {Understanding Economic Policy Uncertainty index using semi-automatic news classification},
+  journal = {Workshop on Stochastic Simulation Methods in Statistics,  Rio de Janeiro, Brazil},
+  year = {2019}
+}
+
+@article{pres32,
+  author = {Targino, Rodrigo S.},
+  title = {Understanding Economic Policy Uncertainty index using semi-automatic news classification},
+  journal = {Universidade Federal de Santa Catarina (UFSC),  Florian\'opolis, Brazil},
+  year = {2019}
+}
+
+@article{pres31,
+  author = {Targino, Rodrigo S.},
+  title = {Prediction of the Volatility Surface with Generalized Autoregressive Score (GAS) models},
+  journal = {Congresso Nacional de Matem\'atica Aplicada e Computacional (CNMAC),  Campinas, Brazil},
+  year = {2018}
+}
+
+@article{pres30,
+  author = {Targino, Rodrigo S.},
+  title = {The Impact of the Freedom of the Press on Risk},
+  journal = {SIAM Conference on Financial Mathematics \& Engineering,  Toronto, Canada.},
+  year = {2019},
+  url = {https://www.dropbox.com/s/u77t1n25hk3rqop/News.pdf?dl=0}
+}
+
+
+@article{pres29,
+  author = {Targino, Rodrigo S.},
+  title = {The Impact of the Freedom of the Press on Risk},
+  journal = {Universidade Federal do Rio de Janeiro (UFRJ),  Rio de Janeiro, Brazil.},
+  year = {2019}
+}
+
+@article{pres28,
+  author = {Targino, Rodrigo S.},
+  title = {The Impact of the Freedom of the Press on Risk},
+  journal = {33 Foro Nacional de Estad\'istica (FNE) y 13 Congreso Latinoamericano de Sociedades de Estad\'istica (CLATSE),  Guadalajara, Mexico.},
+  year = {2018},
+  url = {https://www.dropbox.com/s/34rp3qqhnk8iitp/slides_FOTP.pdf?dl=0}
+}
+
+@article{pres27,
+  author = {Targino, Rodrigo S.},
+  title = {The Impact of the Freedom of the Press on Risk},
+  journal = {Workshop in Econometrics,  S\~ao Paulo, Brazil.},
+  year = {2018}
+}
+
+@article{pres26,
+  author = {Targino, Rodrigo S.},
+  title = {Realistic Risk Parity Portfolios},
+  journal = {3rd International Workshop in Financial Econometrics*,  Arraial d'Ajuda, Brazil},
+  year = {2017}
+}
+
+@article{pres25,
+  author = {Targino, Rodrigo S.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  journal = {3rd International Congress on Actuarial Science and Quantitative Finance,  Manizales, Colombia.},
+  year = {2019},
+  url = {https://www.dropbox.com/s/zzq149agokfgqkj/RiskMargin.pdf?dl=0}
+}
+
+@article{pres24_2,
+  author = {Targino, Rodrigo S.},
+  title = {Efficient Monte Carlo algorithms for risk allocation},
+  journal = { Research in Options (RiO), Rio de Janeiro, Brazil.},
+  year = {2018},
+  url = {https://www.youtube.com/watch?v=xm0is0DxSoE}
+}
+
+@article{pres24,
+  author = {Targino, Rodrigo S.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  journal = { Simp\'osio Nacional de Probabilidade e Estat\'istica,  S\~ao Pedro, Brazil.},
+  year = {2018}
+}
+
+@article{pres23,
+  author = {Targino, Rodrigo S.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  journal = { 31st Brazilian Mathematical Colloquium,  Rio de Janeiro, Brazil.},
+  year = {2017}
+}
+
+@article{pres22,
+  author = {Targino, Rodrigo S.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  journal = { UCT - Mid-Challenge Workshop in Financial Mathematics,  Cape Town, South Africa.},
+  year = {2017}
+}
+
+@article{pres21,
+  author = {Targino, Rodrigo S.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  journal = { Universidade Federal do Rio de Janeiro (UFRJ),  Rio de Janeiro, Brazil.},
+  year = {2017}
+}
+
+@article{pres20,
+  author = {Targino, Rodrigo S.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  journal = { Instituto Nacional de Matem\'{a}tica Pura e Aplicada,  Rio de Janeiro, Brazil.},
+  year = {2017}
+}
+
+
+@article{pres19,
+  author = {Targino, Rodrigo S.},
+  journal = { 3rd Workshop on Assessment of Risk (WAR)*,  S\~ao Paulo, Brazil.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  year = {2016}
+}
+
+@article{pres18,
+  author = {Targino, Rodrigo S.},
+  journal = { Research in Options (RiO),  Rio de Janeiro, Brazil.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  year = {2016},
+  url = {https://www.youtube.com/watch?v=toqA3_v8Kfs&t=3961s}
+}
+
+@article{pres17,
+  author = {Targino, Rodrigo S.},
+  journal = { Funda\c{c}\~ao Getulio Vargas,  Rio de Janeiro, Brazil.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  year = {2016}
+}
+
+@article{pres16,
+  author = {Targino, Rodrigo S.},
+  journal = { Cass Business School,  London, United Kingdom.},
+  title = {Bayesian Modelling, Monte Carlo Sampling and Capital Allocation of Insurance Risks},
+  year = {2016}
+}
+
+@article{pres15,
+  author = {Targino, Rodrigo S.},
+  journal = {Christmas Workshop on Sequential Monte Carlo and related methods,  London, UK.},
+  title = {Sequential Monte Carlo Samplers for capital allocation under copula-dependent risk models},
+  year = {2015}
+}
+
+@article{pres14,
+  author = {Targino, Rodrigo S.},
+  journal = {Sequential Monte Carlo Workshop*,  Paris, France.},
+  title = {Sequential Monte Carlo Samplers for capital allocation under copula-dependent risk models},
+  year = {2015}
+}
+
+@article{pres13,
+  author = {Targino, Rodrigo S.},
+  journal = {Congress on Insurance: Mathematics and Economics,  Liverpool, UK.},
+  title = {Sequential Monte Carlo Samplers for capital allocation under copula-dependent risk models},
+  year = {2015}
+}
+
+@article{pres12,
+  author = {Targino, Rodrigo S.},
+  journal = {Universidade Federal do Rio de Janeiro (UFRJ),  Rio de Janeiro, Brazil.},
+  title = {Sequential Monte Carlo Samplers for capital allocation under copula-dependent risk models},
+  year = {2015}
+}
+
+@article{pres11,
+  author = {Targino, Rodrigo S.},
+  journal = {University of New South Wales (UNSW),  Sydney, Australia.},
+  title = {Sequential Monte Carlo Samplers for capital allocation under copula-dependent risk models},
+  year = {2014}
+}
+
+@article{pres10,
+  author = {Targino, Rodrigo S.},
+  journal = {Research Students Conference,  Nottingham, United Kingdom.},
+  title = {Sequential Monte Carlo Samplers for capital allocation under copula-dependent risk models},
+  year = {2014}
+}
+
+
+@article{pres9,
+  author = {Targino, Rodrigo S.},
+  journal = {Monte Carlo and Quasi Monte Carlo (MCQMC),  Leuven, Belgium},
+  title = {Sequential Monte Carlo Samplers for capital allocation under copula-dependent risk models},
+  year = {2014}
+}
+
+@article{pres8,
+  author = {Targino, Rodrigo S.},
+  journal = {Universidade Federal do Rio de Janeiro (UFRJ),  Rio de Janeiro, Brazil},
+  title = {Optimal exercise strategies for operational risk insurance via multiple optimal stopping times},
+  year = {2013}
+}
+
+@article{pres7,
+  author = {Targino, Rodrigo S.},
+  journal = {CFE-ERCIM,  London, United Kingdom.},
+  title = {},
+  year = {2013}
+}
+
+@article{pres6,
+  author = {Targino, Rodrigo S.},
+  journal = {Macquarie University,  Sydney, Australia.},
+  title = {},
+  year = {2013}
+}
+
+@article{pres5,
+  author = {Targino, Rodrigo S.},
+  journal = {Research In Options*,  B\'uzios, Brazil.},
+  title = {Hedging in incomplete markets using Fourier series method},
+  year = {2009}
+}
+
+@article{pres4,
+  author = {Targino, Rodrigo S.},
+  journal = {XIII Brazilian School of Probability*,  Maresias, Brazil.},
+  title = {Applications of the fractional Brownian motion in finance},
+  year = {2009}
+}
+
+@article{pres3,
+  author = {Targino, Rodrigo S.},
+  journal = {13a Escola de S\'{e}ries Temporais e Econometria,  S\~ao Carlos, Brazil},
+  title = {Estimation of the parameters of the Heston model by Fourier series method},
+  year = {2009}
+}
+
+@article{pres2,
+  author = {Targino, Rodrigo S.},
+  journal = {Fourth Brazilian Conference on Statistical Modelling in Insurance and Finance,  Maresias, Brazil.},
+  title = {Calibration of the Heston model by Fourier series method},
+  year = {2009}
+}
+
+@article{pres1,
+  author = {Targino, Rodrigo S.},
+  journal = {Research In Options (RiO)*,  Angra dos Reis, Brazil.},
+  title = {Bayesian selection for Heston models with volatilities determined by Fourier series method},
+  year = {2008}
+}

@@ -1,0 +1,47 @@
+{
+    "stochastic2023maia": {
+        "abstract": "This paper develops a general framework for stochastic modeling of goals and other events in football (soccer) matches. The events are modelled as Cox processes (doubly stochastic Poisson processes) where the event intensities may depend on all the modeled events as well as external factors. The model has a strictly concave log-likelihood function which facilitates its fitting to observed data. Besides event times, the model describes the random lengths of stoppage times which can have a strong influence on the final score of a match. The model is illustrated on eight years of data from Campeonato Brasileiro de Futebol Série A. We find that dynamic regressors significantly improve the in-game predictive power of the model. In particular, a) when a team receives a red card, its goal intensity decreases more than 30\\%; b) the goal rate of a team increases by 10\\% if it is losing by one goal and by 20\\% if its losing by two goals; and c) when the goal difference at the end of the second half is less than or equal to one, the stoppage time is on average more than one minute longer than in matches with a difference of two goals.",
+        "url": "https://arxiv.org/abs/2312.04338",
+        "year": "2023",
+        "author": "Maia, Luiz Fernando G. N. and Pennanen, Teemu and da Silva, Moacyr A. H. B. and Targino, Rodrigo S.",
+        "title": "Stochastic modelling of football matches",
+        "ENTRYTYPE": "unpublished",
+        "ID": "stochastic2023maia"
+    },
+    "conformal2023": {
+        "abstract": "We present a nonparametric model-agnostic framework for building prediction intervals of insurance claims, with finite sample statistical guarantees, extending the technique of split conformal prediction to the domain of two-stage frequency-severity modeling. The effectiveness of the framework is showcased with simulated and real datasets. When the underlying severity model is a random forest, we extend the two-stage split conformal prediction procedure, showing how the out-of-bag mechanism can be leveraged to eliminate the need for a calibration set and to enable the production of prediction intervals with adaptive width.",
+        "url": "https://arxiv.org/abs/2307.13124",
+        "year": "2023",
+        "author": "Graziadei, Helton and Marques F., Paulo C. and de Melo, Eduardo F. L. and Targino, Rodrigo S.",
+        "title": "Conformal prediction for frequency-severity modeling",
+        "ENTRYTYPE": "unpublished",
+        "ID": "conformal2023"
+    },
+    "jaimungal2023risk": {
+        "abstract": "We define and develop an approach for risk budgeting allocation -- a risk diversification portfolio strategy -- where risk is measured using a dynamic time-consistent risk measure. For this, we introduce a notion of dynamic risk contributions that generalise the classical Euler contributions and which allow us to obtain dynamic risk contributions in a recursive manner. We prove that, for the class of dynamic coherent distortion risk measures, the risk allocation problem may be recast as a sequence of strictly convex optimisation problems. Moreover, we show that any self-financing dynamic risk budgeting strategy with initial wealth of 1 is a scaled version of the unique solution of the sequence of convex optimisation problems. Furthermore, we develop an actor-critic approach, leveraging the elicitability of dynamic risk measures, to solve for risk budgeting strategy using deep learning.",
+        "url": "https://ssrn.com/abstract=4452742",
+        "year": "2023",
+        "author": "Jaimungal, Sebastian and Pesenti, Silvana and Saporito, Yuri and Targino, Rodrigo S.",
+        "title": "Risk Budgeting Allocation for Dynamic Risk Measures",
+        "ENTRYTYPE": "unpublished",
+        "ID": "jaimungal2023risk"
+    },
+    "evangelista2021analise": {
+        "abstract": "Entender a contribuição de ativos individuais ou de grupos de ativos para o risco total de um determinado portfólio é imprescindível para uma gestão financeira moderna. Nesse artigo, usando um modelo estocástico para retornos que combina volatilidade estocástica, teoria dos valores extremos para as caudas e cópula para modelar a dependência entre os ativos, nós calculamos a contribuição marginal ao risco de 10 fundos de ações que obtiveram retornos significativos em 2020. Nossa análise mostra que, dependendo da composição do portfólio, alguns setores econômicos podem contribuir até 40\\% mais para o risco total do portfólio do que o risco observado quando os ativos são tratados de forma individual.",
+        "url": "https://papers.ssrn.com/abstract=3825680",
+        "year": "2021",
+        "author": "Evangelista, David and Saporito, Yuri F. and Targino, Rodrigo S.",
+        "title": "Uma análise do risco de fundos de ações brasileiros em 2020",
+        "ENTRYTYPE": "unpublished",
+        "ID": "evangelista2021analise"
+    },
+    "duarte2018impact": {
+        "abstract": "We provide empirical evidence that changes in the level of the freedom of the press have a substantial impact on important risk measures. Using data from the Freedom of the Press annual report to capture how freely the news media can operate, we investigate how changes in the freedom of the press impact financial markets' volatility and the economic policy uncertainty index. Using data from eight of the OECD countries and the BRIC countries, we present empirical evidence that the effect of the freedom of the press shocks on the economic policy uncertainty index and on the financial markets' volatility is quite distinct, providing further support that both measures of risk capture different dimensions of uncertainty. In addition, we show that the freedom of the press deteriorates during economic recessions relative to economic expansions.",
+        "url": "https://dx.doi.org/10.2139/ssrn.3218754",
+        "year": "2018",
+        "author": "Duarte, Diogo and Saporito, Yuri F. and Targino, Rodrigo S.",
+        "title": "The Impact of the Freedom of the Press on Risk",
+        "ENTRYTYPE": "unpublished",
+        "ID": "duarte2018impact"
+    }
+}

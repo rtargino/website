@@ -1,0 +1,265 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta name="author" content="Rodrigo S. Targino">
+        <meta name="description" content="Assistant Professor of Statistics">
+
+        <title>Rodrigo S. Targino</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+        <!-- Include Academicons CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" 
+            integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" 
+            crossorigin="anonymous">
+            
+        <!-- Include Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+            integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" 
+            crossorigin="anonymous">
+        
+        <!-- Include Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+        
+        <!-- Include Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+        
+        <!-- Include Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+        
+
+        <!-- Local Stylesheet -->
+        <link rel="stylesheet" href="website/css/styles.css">
+
+        <!-- Local JavaScript -->
+        <script type="module" src="website/js/main.js"></script>
+
+        <!-- Favicon -->
+        <link rel="icon" href="./static/images/favicon.png" sizes="16x16" type="image/png">
+    </head>
+
+    <body>
+
+        <header id="header">
+            <!-- Navigation Bar with Anchors to Sections -->
+            <nav>
+                <a href=".\index.html" class="bold nav-permanent">Rodrigo S. Targino</a>
+
+                <a class="nav-options" href="#header">Home</a>
+                <a class="nav-options" href="#professional-experience-section">Experience</a>
+                <a class="nav-options" href="#talks-section">Talks</a>
+                <a class="nav-options" href="#publications-section">Publications</a>
+                <a class="nav-options" href="#preprints-section">Preprints</a>
+                <a class="nav-options" href="#students-section">Students</a>
+                <a class="nav-options" href="#teaching-section">Teaching</a>
+                <a class="nav-options" href="#contact-section">Contact</a>
+                <a class="nav-options" href=".\static\author_data\RodrigoSTarginoCV.pdf">CV</a>
+
+                <!-- Container para os botões -->
+                <a id="theme-toggle-button" class="icon-button">
+                    <i class="fa fa-adjust"></i>
+                </a>
+
+                <!-- Ícone do Menu Hamburguer -->
+                <a class="menu-toggle" href="javascript:void(0);">
+                    <i class="fas fa-bars"></i> <!-- Ícone do menu hamburguer -->
+                </a>
+            </nav>
+        </header>
+
+        
+
+        <main>
+            <!-- Tela de Carregamento -->
+            <div id="loading-overlay">
+                <div class="loader"></div>
+            </div>
+
+            <!-- Personal Information Section -->
+            <section id="personal-info-section">
+                <div id="personal-info-left" class="section-title">
+                    <div id="personal-picture-container">
+                        <img id="personal-picture" src=".\static\images\profile_picture.jpg" alt="Photo of Rodrigo S. Targino">
+                    </div>
+                    <h2 id="name" class="white-text regular"></h2>
+                    <h4 id="title" class="semi-bold grey-text"></h4>
+                    <h4 id="affiliation" class="semi-bold grey-text"></h4>
+
+                    <ul id="personal-network">
+                        <li>
+                            <a href="#contact-section">
+                                <i class="fas fa-envelope big-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rodrigo-targino-13223721" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin big-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scholar.google.co.uk/citations?user=MzsSCe4AAAAJ&amp;hl" target="_blank" rel="noopener">
+                                <i class="ai ai-google-scholar big-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://lattes.cnpq.br/1858273943834070" target="_blank" rel="noopener">
+                                <i class="ai ai-lattes big-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/rtargino" target="_blank" rel="noopener">
+                                <i class="fab fa-github big-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=".\static\author_data\RodrigoSTarginoCV.pdf">
+                                <i class="ai ai-cv big-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="personal-info-right" class="section-content">
+                    <div id="biography">
+                        <h1 class="regular grey-text">Biography</h1>
+                        <p id="biography-text"></p>
+                    </div>
+
+                    
+                    <div id="details-container">
+                        <div id="interests">
+                            <h3 class="bold grey-text">Interests</h3>
+                            <ul id="interests-list"></ul>
+                        </div>
+
+                        <div id="education">
+                            <h3 class="bold grey-text">Education</h3>
+                            <ul id="education-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="professional-experience-section">
+                <!-- Coluna do Título -->
+                <div class="section-title">
+                    <h2>Professional Experience</h2>
+                </div>
+                <!-- Coluna do Conteúdo -->
+                <div class="section-content">
+                    <ul id="professional-experience-list"></ul>
+                </div>
+            </section>
+
+            <!-- Talks Section -->
+            <section id="talks-section">
+                <!-- Coluna do Título -->
+                <div class="section-title">
+                    <h2>Talks</h2>
+                </div>
+                <!-- Coluna do Conteúdo -->
+                <div class="section-content">
+                    <ul id="talks-list"></ul>
+                    <br>
+                    <a id="see-all-talks" href="search_page.html?type=talks" target="_blank">SEE ALL TALKS ></a>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section id="publications-section">
+                <!-- Coluna do Título -->
+                <div class="section-title">
+                    <h2>Publications</h2>
+                </div>
+                <!-- Coluna do Conteúdo -->
+                <div class="section-content">
+                    <ul id="publications-list"></ul>
+                    <br>
+                    <a id="see-all-publications" href="search_page.html?type=publications" target="_blank">SEE ALL PUBLICATIONS ></a>
+                </div>
+            </section>
+
+            <!-- Preprints Section -->
+            <section id="preprints-section">
+                <!-- Coluna do Título -->
+                <div class="section-title">
+                    <h2>Preprints</h2>
+                </div>
+                <!-- Coluna do Conteúdo -->
+                <div class="section-content">
+                    <ul id="preprints-list"></ul>
+                    <br>
+                    <a id="see-all-preprints" href="search_page.html?type=preprints" target="_blank">SEE ALL PREPRINTS ></a>
+                </div>
+            </section>
+
+            <!-- Students Section -->
+            <section id="students-section">
+                <!-- Coluna do Título -->
+                <div class="section-title">
+                    <h2>Students</h2>
+                </div>
+                <!-- Coluna do Conteúdo -->
+                <div class="section-content table-container">
+                    <table id="students-table"></table>
+                </div>
+            </section>
+
+            <!-- Teaching Section -->
+            <section id="teaching-section">
+                <!-- Coluna do Título -->
+                <div class="section-title">
+                    <h2>Teaching</h2>
+                </div>
+                <!-- Coluna do Conteúdo -->
+                <div class="section-content">
+                    <div class="table-container">
+                        <table id="teaching-table"></table>
+                    </div>
+                    <p class="no-margin grey-text">(*) Second supervisor.</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact-section">
+                <!-- Coluna do Título -->
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+                <!-- Coluna do Conteúdo -->
+                <div id="contact-container" class="section-content">
+                    <p id="contact-email"></p>
+                    <p id="contact-address"></p>
+                    <div id="contact-map"></div>
+                </div>
+            </section>
+
+            <div id="articleModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+
+            <div id="citeModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeCiteModal" class="close">&times;</span>
+                    <div id="citeModalContent"></div>
+                </div>
+            </div>
+
+        </main>
+
+    </body>
+
+    </html>

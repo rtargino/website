@@ -1,0 +1,26 @@
+{
+    "name": "Rodrigo S. Targino",
+    "title": "Assistant Professor of Statistics",
+    "affiliation": {
+        "institution": "Getulio Vargas Foundation (FGV)",
+        "department": "School of Applied Mathematics (EMAp)"
+    },
+    "biography": "I am an Assistant Professor in Statistics at the School of Applied Mathematics (EMAp), at the Getulio Vargas Foundation (FGV). Since 2021, I am an Associate Editor of the Brazilian Review of Finance (RBFin). For the academic year 2022/23 I was on a sabbatical from FGV EMAp, working as a Visiting Associate Professor at the Department of Statistics and Applied Probability (PSTAT) at the University of California, Santa Barbara (UCSB). \nFrom 2012 to 2016, I was a PhD candidate at the Department of Statistical Science, at the University College London (UCL). In 2014 I was also a recipient of the Australia Award Endeavour Research Fellowship. \nAfter completing a BSc in Applied Mathematics and a MSc in Statistics (both from Federal University of Rio de Janeiro, Brazil) I spent 2.5 years working at the financial industry in Brazil, first as a Credit Risk Modelling Analyst at Itaú-Unibanco Bank and then as a Market Risk Analyst at Credit-Suisse Hedging-Griffo. During the Masters I also collaborated on a IMPA / Petrobras research project, mainly focused on Real Options problems.",
+    "interests": [
+        "Bayesian Statistics",
+        "Financial and Actuarial Risk Management"
+    ],
+    "contact_information": {
+        "email": "rodrigo.targino@fgv.br",
+        "linkedin": "https://www.linkedin.com/in/rodrigo-targino-13223721/",
+        "google_scholar": "https://scholar.google.co.uk/citations?user=MzsSCe4AAAAJ&hl",
+        "lattes": "https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4231270E8",
+        "github": "https://github.com/rtargino",
+        "cv": "https://github.com/rtargino/website/static/author_data/RodrigoSTarginoCV.pdf", 
+        "address": "Praia de Botafogo, 190, Rio de Janeiro, RJ, 22250-145, Brazil",
+        "geoposition": {
+            "latitude": -22.94120,
+            "longitude": -43.18023
+        }
+    }
+}

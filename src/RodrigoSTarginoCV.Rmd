@@ -1,0 +1,256 @@
+---
+name: Rodrigo S Targino
+address: "School of Applied Mathematics (EMAp),\\tabularnewline Getulio Vargas Foundation (FGV), \\tabularnewline Rio de Janeiro, RJ, Brazil."
+www: https://rtargino.github.io/website/
+# phone: +61 3 9905 5141
+email: "rodrigo.targino@fgv.br"
+# twitter: robjhyndman
+# github: "`r Sys.setlocale('LC_TIME', 'C')`"
+date: "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.Date(), '%B %Y')`"
+# date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+headcolor: 100088 # start with 1 beacuse all the left 0 are removed 
+keep_md: yes
+output: 
+  vitae::hyndman:
+    keep_tex: yes
+---
+
+<!-- Needs to run to get google authentification to acess sheets -->
+<!-- library(googlesheets4) -->
+<!-- gs4_auth(email = "targinorj@gmail.com") -->
+
+
+\newcounter{bib}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, cache = FALSE)
+library(tidyverse)
+library(RefManageR)
+library(vitae)
+# library(googlesheets4)
+# source("functions.R")
+```
+
+```{r bibfiles}
+# Read any bib files
+pubs <- bibliography_entries("../static/bib_files/publications.bib")
+preprints = bibliography_entries("../static/bib_files/preprints.bib")
+talks <- bibliography_entries("../static/bib_files/talks.bib")
+```
+
+# Education
+
+```{r degrees, results='asis'}
+education = as_tibble(read.csv("../static/author_data/education.csv"))
+
+education %>%
+  detailed_entries(
+    when = glue::glue("{Start} -- {End}"),
+    what = Course,
+    with = Location,
+    where = Institution
+  )
+```
+
+# Employment
+
+```{r employment, results='asis'}
+professional_experience = as_tibble(read.csv("../static/author_data/professional_experience.csv"))
+
+professional_experience %>%
+  mutate(Start = as.numeric(format(as.Date(StartDate), "%Y")),
+         End = ifelse(EndDate == "", "Present", as.numeric(format(as.Date(EndDate), "%Y")))) %>%
+  arrange(desc(End)) %>%
+  detailed_entries(
+    when = glue::glue("{Start} -- {End}"),
+    what = Title,
+    where = glue::glue("{Company} {ifelse(Department=='', '', ' - ')} {Department}"),
+    with = Location
+  )
+```
+
+<!-- # Grants  -->
+
+<!-- ```{r, results='asis'} -->
+
+<!-- grants = as_tibble(read_sheet("https://docs.google.com/spreadsheets/d/10ftKseB6KCubTTyw3qkwbLX3DOr312feAgLxNykcbMc/edit#gid=0")) -->
+
+<!-- grants %>%  -->
+
+<!--   arrange(desc(Start)) %>% -->
+
+<!--   baretable() -->
+
+<!-- ``` -->
+
+# Grants
+
+```{r grants, results='asis'}
+grants = as_tibble(read.csv("../static/author_data/grants.csv"))
+grants %>%
+  filter(Start>2016 | is.na(Start)) %>%
+  # select(Years, Course, Level, Institution) %>%
+  arrange(desc(End)) %>%
+  select(-Amount) %>%
+  detailed_entries(
+    when = glue::glue("{Start} -- {End}"),
+    what = Project,
+    with = Sponsor,
+  )
+```
+(*) event organization
+
+# Awards
+
+```{r awards, results='asis'}
+awards = as_tibble(read.csv("../static/author_data/awards.csv"))
+awards %>%
+  arrange(desc(Date)) %>%
+  detailed_entries(
+    when = Date,
+    what = Title
+  )
+```
+
+# Teaching experience
+
+```{r teaching, results='asis'}
+teaching = as_tibble(read.csv("../static/author_data/teaching_experience.csv"))
+teaching %>%
+  arrange(desc(End), desc(Start)) %>%
+  detailed_entries(
+    when = glue::glue("{Start} -- {End}"),
+    what = glue::glue("{Level} - {Course}"),
+    with = Institution
+  )
+```
+
+(\*) excluding 2018
+
+# Academic supervisions
+
+```{r}
+students = read.csv("../static/author_data/students.csv", encoding = "Latin1")
+```
+
+## PhD
+
+```{r supervision_phd, results='asis'}
+students %>%
+  filter(Level == "PhD") %>%
+  mutate(End = ifelse(is.na(End), "Present", End)) %>%
+  arrange(desc(End), desc(Start)) %>%
+  select(-Level, -Position) %>%
+  detailed_entries(
+    when = glue::glue("{Start} -- {End}"),
+    what = Project,
+    where = Name,
+    with = Institution
+  )
+```
+
+## MSc
+
+```{r supervision_msc, results='asis'}
+students %>%
+  filter(Level == "MSc") %>%
+  mutate(End = ifelse(is.na(End), "Present", End)) %>%
+  arrange(desc(End), desc(Start)) %>%
+  select(-Level, -Position) %>%
+  detailed_entries(
+    when = glue::glue("{Start} -- {End}"),
+    what = Project,
+    where = Name,
+    with = Institution
+  )
+```
+
+## BSc
+
+```{r supervision_bsc, results='asis'}
+students %>%
+  filter(Level == "BSc") %>%
+  mutate(End = ifelse(is.na(End), "Present", End)) %>%
+  arrange(desc(End), desc(Start)) %>%
+  select(-Level, -Position) %>%
+  detailed_entries(
+    when = glue::glue("{Start} -- {End}"),
+    what = Project,
+    where = Name,
+    with = Institution
+  )
+```
+
+(\*) Second supervisor
+
+# Editorial activity
+
+```{r editorial, results='asis'}
+editorial <- read.csv("../static/author_data/editorial.csv")
+
+editorial %>%
+  # filter(!grepl("HP Innovation", Award)) %>%
+  mutate(End = ifelse(is.na(End), "Present", End)) %>%
+  arrange(desc(End), desc(Start)) %>%
+  detailed_entries(
+    when = glue::glue("{Start} -- {End}"),
+    what = Role,
+    with = Journal
+  )
+```
+
+# Refereeing services
+
+## Journals
+
+Risks, Journal of Risk and Financial Management, Computation and Applied Mathematics, Brazilian Review of Econometrics, ASTIN Bulletin, Journal of Banking and Finance, Sustainability, Quantitative Finance, Revista Contabilidade & Finanças, Brazilian Review of Finance, International Journal of Forecasting, Applied Stochastic Models in Business and Industry, Computational Statistics, Annals of Actuarial Science, European Actuarial Journal, Variance, Methodology and Computing in Applied Probability, Annals of Operations Research
+
+## Funding agencies
+
+Natural Sciences and Engineering Research Council of Canada, Czech Science Foundation
+
+# Research visits
+
+```{r visits, results='asis'}
+visits <-read.csv("../static/author_data/visits.csv")
+
+visits %>%
+  # filter(!grepl("HP Innovation", Award)) %>%
+  arrange(desc(Year), Host) %>%
+  detailed_entries(
+    when = Year,
+    what = Host,
+    with = Institution
+  )
+```
+
+# Publications
+\refstepcounter{bib}\label{papersstart}
+
+## Refereed research papers
+
+```{r research-papers}
+# Normal articles excluding editorials
+pubs %>%
+  filter(type == "article-journal") %>%
+  arrange(desc(issued))
+```
+
+## Working papers under revision or review
+
+```{r working-papers}
+preprints %>%
+  # filter(bibtype %in% c("TechReport", "Unpublished")) %>%
+  arrange(desc(issued))
+```
+
+# Academic presentations
+
+```{r}
+talks %>%
+  # filter(bibtype == "Article") %>%
+  arrange(desc(issued))
+
+```
+
+(\*) Poster presentations.

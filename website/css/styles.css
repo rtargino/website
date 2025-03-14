@@ -1,0 +1,747 @@
+/* Dark Theme Variables */
+:root[theme="dark"] {
+    --navy-blue: rgb(39, 41, 53);
+    --dark-blue: rgb(35, 37, 47);
+    --hyperlink-blue: rgb(41, 98, 255);
+    --light-gray: rgb(152, 166, 173);
+    --modal-overlay: rgba(0, 0, 0, 0.7);
+    --table-light: rgb(60, 62, 74);
+    --table-dark: rgb(14, 15, 19);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --card-gray: rgb(52, 58, 64);
+    --font-color: rgb(255, 255, 255);
+    --box-shadow-color: rgba(255, 255, 255, 0.11) ;
+}
+
+/* Light Theme Variables */
+:root[theme="light"] {
+    --navy-blue: rgb(255,255,255);
+    --dark-blue: rgb(247,247,247);
+    --hyperlink-blue: rgb(0, 120, 215);
+    --light-gray: rgb(0, 0, 0);
+    --modal-overlay: rgba(255, 255, 255, 0.7);
+    --table-light: rgb(255,255,255);
+    --table-dark: rgb(247,247,247);
+    --white: rgb(0, 0, 0);
+    --black: rgb(255, 255, 255);
+    --card-gray: rgb(255,255,255);
+    --font-color: rgb(0, 0, 0);
+    --box-shadow-color: rgba(0, 0, 0, 0.11);
+}
+
+/* General */
+* {
+    font-family: roboto, sans-serif;
+    color: var(--font-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--navy-blue);
+}
+
+a {
+    color: var(--hyperlink-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tags */
+h1, h2, h3, h4, h5, h6 {
+    font-family: montserrat, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    color: var(--light-gray);
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+main {
+    padding-top: 70px;
+}
+
+/* Estilização da barra de navegação */
+nav {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Alinha os itens à esquerda */ 
+    padding: 10px 10%;
+    box-shadow: var(--box-shadow-color) 0px 2px 4px 0px;
+    background-color: var(--navy-blue);
+    position: fixed; /* Navbar fixa no topo */
+    top: 0; /* Fixa no topo da página */
+    width: 100%; /* Garante que a barra ocupe 100% da largura da tela */
+    max-width: 100%; /* Garante que ela não exceda a largura da tela */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    overflow: hidden; /* Impede que qualquer conteúdo transborde para fora da navbar */
+}
+
+/* Estilização do título (parágrafo) */
+nav p.bold {
+    font-size: 1.5rem; /* Tamanho maior para o título */
+    margin: 0 20px 0 0; /* Espaçamento do título para os links */
+    font-weight: bold;
+    color: var(--font-color);
+    flex-shrink: 0; /* Não deixa o título encolher */
+}
+
+/* Estilização dos links de navegação */
+nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 0.9rem;
+    padding: 10px 10px; /* Espaçamento interno nos botões */
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Evita que os links encolham */
+    text-align: center; /* Centraliza o texto dentro do link */
+}
+
+/* Estilo ao passar o mouse */
+nav a:hover {
+    background-color: var(--box-shadow-color); /* Altera a cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Centraliza e espaça adequadamente os itens dentro do <nav> */
+nav a, nav p {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    text-decoration: none !important; /* Remove o sublinhado padrão */
+}
+
+/* Estilo comum para os botões */
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--navy-blue); /* Cor de fundo */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 10px;
+    margin-left: 5rem;
+    font-size: 1.5rem; /* Tamanho dos ícones */    
+    color: var(--font-color);
+}
+
+.icon-button:hover {
+    background: var(--box-shadow-color); /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+p, ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+section {
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center; /* Espaça as colunas à esquerda e à direita */
+    gap: 1rem; /* Espaço entre as colunas */
+    flex-wrap: nowrap; /* Impede que as colunas quebrem linha */
+}
+
+/* Coluna do título */
+.section-title {
+    flex: 0 0 30%; /* Fixa em 40% da largura do container */
+    max-width: 30%; /* Limita a largura da coluna */
+    max-width: 350px; /* Limita a largura da coluna */
+}
+
+/* Coluna do conteúdo */
+.section-content {
+    flex: 0 0 70%; /* Fixa em 60% da largura do container */
+    max-width: 70%; /* Limita a largura da coluna */
+    max-width: 750px; /* Limita a largura da coluna */
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--font-color);
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+}
+
+thead {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--table-light); /* Cor de fundo para linhas ímpares */
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-dark); /* Cor de fundo para linhas pares */
+}
+
+td, th {
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+}
+
+tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Classes */
+.no-margin {
+    margin: 0;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.semi-bold {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.grey-text {
+    color: var(--light-gray);
+}
+
+.white-text {
+    color: var(--font-color);
+}
+
+/* Article-card title */
+.article-card h3 {
+    cursor: pointer;
+    color: var(--light-gray);   
+}
+
+.article-card h3:hover {
+    color: var(--hyperlink-blue);
+}
+
+.article-card a {
+    color: var(--hyperlink-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.article-card p {
+    margin-top: 5px;
+}
+
+/* Especificamente para os links (botões de zoom e de controle) */
+.leaflet-control-zoom-in span, .leaflet-control-zoom-out span, .leaflet-popup-content b{
+    color: black !important; /* Define a cor dos links (botões) */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 85%;
+    background-color: var(--modal-overlay);
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid var(--light-gray);
+    border-radius: 10px;
+    width: 60%;
+    max-width: 800px;
+    background-color: var(--navy-blue);
+    color: var(--light-gray);
+    box-shadow: var(--box-shadow-color) 0px 4px 8px 0px;
+}
+
+pre {
+    white-space: pre-wrap; /* Wraps long lines */
+    word-wrap: break-word; /* Breaks long words */
+    max-width: 100%; /* Ensure it doesn’t exceed its container */
+}
+
+.publication-title {
+    color: var(--hyperlink-blue) !important;
+}
+
+.publication-title:hover {
+    text-decoration: underline;
+}
+
+.article-card {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.article-card h3 {
+    margin-bottom: 0;
+}
+
+.biography-text {
+    margin-top: 0;
+}
+
+.cite-link, .doc-link {
+    display: inline-block;
+    padding: 6px 8px;
+    margin: 5px 3px;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: var(--hyperlink-blue);
+    text-decoration: none !important;
+    background-color: transparent;
+    border: 1px solid var(--hyperlink-blue);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cite-link:hover, .doc-link:hover {
+    color: var(--font-color);
+    background-color: var(--hyperlink-blue);
+}
+
+.close {
+    color: var(--light-gray);
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--hyperlink-blue);
+    text-decoration: none;
+}
+
+.modal a {
+    color: var(--hyperlink-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal a:hover {
+    color: var(--hyperlink-blue);
+    text-decoration: none;
+}
+
+.nav-permanent {
+    font-size: 1.5rem; /* Tamanho maior para o título */
+    margin: 0 20px 0 0; /* Espaçamento do título para os links */
+    font-weight: bold;
+    color: var(--font-color);
+    flex-shrink: 0; /* Não deixa o título encolher */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Adiciona rolagem horizontal apenas no contêiner da tabela */
+    -webkit-overflow-scrolling: touch; /* Permite rolagem suave em dispositivos móveis */
+}
+
+/* ID's */
+
+#contact-email, #contact-address {
+    margin: 10px 0;
+}
+
+/* Remove o marcador padrão */
+#education-list {
+    list-style: none; /* Remove os bullets (discos) padrão */
+    padding-left: 0; /* Remove o espaçamento à esquerda */
+}
+
+#education-list li {
+    position: relative; /* Torna o li relativo para posicionar o ícone */
+    margin-bottom: 15px; /* Espaçamento entre os itens da lista */
+    padding-left: 30px; /* Espaçamento à esquerda para o ícone */
+}
+
+/* Adiciona o ícone de chapéu de formatura antes de cada item */
+#education-list li::before {
+    content: "\f19d"; /* Código unicode do chapéu de formatura (Font Awesome) */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Garante que o ícone use a versão sólida */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem; /* Ajuste o tamanho do ícone */
+    color: var(--white);
+}
+
+#education-list li p {
+    margin: 0; /* Espaçamento entre os itens da lista */
+}
+
+#education-list li .education-institution {
+    font-size: 16px;
+}
+    
+#interests-list {
+    list-style-type: disc;
+    padding-left: 30px;
+    line-height: 1.8;
+}
+
+#contact-map {
+    height: 300px;
+    color: var(--black);
+}
+
+#name, #title, #affiliation {
+    margin: 5px 0px;
+}
+
+
+/* Estilo para o ícone de menu hamburguer */
+.menu-toggle i {
+    font-size: 1.5rem;
+}
+
+#professional-experience-section, #publications-section, #students-section, #contact-section {
+    background-color: var(--dark-blue);
+}
+
+/* Estilização da lista de experiência profissional */
+#professional-experience-list {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding-left: 30px; /* Dá espaço para os círculos (bandpoints) */
+    margin: 0;
+    position: relative; /* Para posicionar a linha vertical */
+}
+
+/* Linha vertical conectando os círculos */
+#professional-experience-list::before {
+    content: '';
+    position: absolute;
+    left: 28px; /* Ajuste para centralizar a linha dentro dos círculos */
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--hyperlink-blue); /* Cor da linha vertical */
+    z-index: 1; /* Coloca a linha atrás dos círculos */
+}
+
+/* Estilização de cada item da lista */
+#professional-experience-list li {
+    background-color: var(--card-gray); /* Cor de fundo cinza claro */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreamento leve */
+    margin-bottom: 30px; /* Espaçamento entre os cartões */
+    padding: 20px; /* Espaçamento interno para o conteúdo */
+    position: relative; /* Para o posicionamento do círculo */
+    margin-left: 40px; /* Afasta o cartão para a direita para dar espaço ao círculo */
+}
+
+/* Círculo (bandpoint) para cada item da lista */
+#professional-experience-list li::before {
+    content: '';
+    position: absolute;
+    left: -55px; /* Posição do círculo à esquerda do cartão */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o centro do círculo em relação à altura do cartão */
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--hyperlink-blue); /* Círculo azul interno */
+    border-radius: 50%; /* Faz o círculo ser redondo */
+    background-color: var(--dark-blue); /* Cor de fundo do círculo */
+    z-index: 3; /* Garante que o círculo fique acima da linha */
+    box-shadow: 0 0 0 15px var(--dark-blue); /* Cria uma borda externa azul escuro */
+}
+
+/* Classe especial para cartões com o círculo preenchido */
+#professional-experience-list li.filled::before {
+    background-color: var(--hyperlink-blue); /* Preenche o círculo com azul */
+    box-shadow: 0 0 0 5px var(--dark-blue); /* Mantém a borda externa */
+}
+
+/* Estilização de cada item da lista */
+#professional-experience-list li p {
+    margin: 0; /* Remove o espaçamento padrão */
+}
+
+
+
+#personal-picture-container {
+    width: 270px; /* Set the container's width and height to be equal */
+    height: 270px;
+    border-radius: 50%; /* This makes the container circular */
+    overflow: hidden; /* Hide any overflow of the image */
+}
+
+#personal-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+#personal-network{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+#personal-network i {
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--hyperlink-blue);
+    padding: 0 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+#personal-network i:hover {
+    transform: scale(1.2);
+}
+
+#personal-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Espaça os elementos à esquerda e à direita */
+    /* padding: 50px; */
+}
+
+#personal-info-left {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em uma coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    width: 100%; /* Para telas pequenas */
+    max-width: 400px; /* Limita a largura da coluna à esquerda */
+}
+
+#personal-info-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ocupar o espaço restante */
+    margin-left: 50px;
+}
+
+#biography, #interests, #education {
+    margin-bottom: 0;
+}
+
+#details-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#interests, #education {
+    flex: 1; /* Cada um ocupa metade do espaço */
+    margin-right: 20px; /* Espaçamento entre os elementos */
+}
+
+#education {
+    margin-right: 0; /* Remove o espaçamento do último elemento */
+}
+
+/* Estilização do ícone de menu hamburguer */
+.menu-toggle {
+    display: none;
+    position: absolute;
+    right: 20px; /* Reduz o espaçamento para garantir que o ícone do menu hamburguer fique visível */
+    font-size: 1.5rem;
+    padding: 10px;
+    color: var(--font-color);
+}
+
+/* Estilo para a tela de carregamento */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Cor de fundo opaca */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Garante que fique acima de outros elementos */
+}
+
+/* Estilo para o loader (ícone de carregamento) */
+.loader {
+    border: 16px solid #f3f3f3; /* Cor de fundo */
+    border-top: 16px solid #3498db; /* Cor da parte giratória */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite; /* Animação de rotação */
+}
+
+/* Animação do símbolo de carregamento */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Responsividade - Tamanho de Tela Menor */
+@media (max-width: 1080px) {
+    /* Esconde os links e exibe o ícone hamburguer */
+    nav a {
+        display: none;
+    }
+    
+    /* Mantém o título visível */
+    nav .nav-permanent {
+        display: block;
+    }
+
+    /* Exibe o ícone de menu hamburguer */
+    .menu-toggle {
+        position: absolute;
+        display: block;
+        text-align: right;
+        top: 10px; /* Ajusta o ícone de menu hamburguer */
+        width: auto;
+        right: 20px; /* Ajusta o ícone de menu hamburguer */
+    }
+
+    /* Exibe os links de navegação quando o menu estiver aberto */
+    nav.active a.nav-options {
+        display: block;
+        margin: 10px 0; /* Espaçamento entre os links */
+        width: 100%; /* Garante que a barra ocupe 100% da largura da tela */
+        max-width: 100%; /* Garante que ela não exceda a largura da tela */
+        box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+        z-index: 1000; /* Garante que fique acima de outros elementos */
+        overflow: hidden; /* Impede que qualquer conteúdo transborde para fora da navbar */
+    }
+
+    /* Coloca o título no topo e empilha os links abaixo */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ajuste para o container de botões de ação */
+    .icon-button {
+        position: absolute;
+        top: 12px; /* Posiciona os botões no topo da página */
+        right: 70px; /* Posiciona à esquerda do ícone hamburguer */
+        width: auto; /* Ajusta a largura automaticamente */
+    }
+
+    /* Ajuste do padding lateral nas seções */
+    section {
+        flex-direction: column; /* Empilha as colunas */
+        padding-left: 20px; /* Reduz o padding lateral à esquerda */
+        padding-right: 20px; /* Reduz o padding lateral à direita */
+    }
+
+    .section-title {
+        flex: 0 0 100%; /* Ocupa 100% da largura em telas pequenas */
+        max-width: 100%; /* Garante que não exceda a largura da tela */
+    }
+
+    .section-content {
+        flex: 0 0 100%; /* Ocupa 100% da largura em telas pequenas */
+        max-width: 100%; /* Garante que não exceda a largura da tela */
+    }
+    
+    #personal-info-section {
+        flex-direction: column;
+        align-items: center; /* Centraliza todos os elementos na coluna */
+        padding-left: 20px; /* Reduz o padding lateral à esquerda */
+        padding-right: 20px; /* Reduz o padding lateral à direita */
+    }
+
+    #personal-info-left {
+        width: 100%; /* Ocupa 100% da largura em telas pequenas */
+        max-width: 100%; /* Garante que não exceda a largura da tela */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo da div */
+        margin: 0 auto; /* Centraliza a div em relação ao container pai */
+    }
+
+    #personal-info-right {
+        width: 100%; /* Faz com que o conteúdo à direita ocupe toda a largura */
+        margin-left: 0; /* Remove a margem lateral */
+    }
+
+    #details-container {
+        flex-direction: column;
+        width: 100%; /* Garante que o container ocupe a largura total */
+    }
+
+    #interests, #education {
+        margin-right: 0;
+        width: 100%; /* Garante que os blocos ocupem a largura total */
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 29px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p, ul {
+        font-size: 16px;
+    }
+
+    #personal-picture-container {
+        width: 200px; /* Set the container's width and height to be equal */
+        height: 200px;
+    }
+
+    #personal-network i {
+        font-size: 36px;
+        line-height: 36px;
+    }
+}
