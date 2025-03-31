@@ -82,6 +82,47 @@ function addEventListeners() {
     dropdownElement.addEventListener('change', handleDropdownChange);
 }
 
+// Change the theme 
+function applyTheme(theme) {
+    const root = document.documentElement;
+    root.setAttribute('theme', theme);
+    localStorage.setItem('theme', theme); // Salva a preferência do usuário
+}
+
+// Detect user's system theme preference
+function detectSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+// Inicialize theme based on user preference or system theme
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('theme'); // Verifica se o usuário já salvou uma preferência
+    if (savedTheme) {
+        applyTheme(savedTheme); // Usa a preferência salva
+    } else {
+        const systemTheme = detectSystemTheme(); // Usa o tema do sistema como padrão
+        applyTheme(systemTheme);
+    }
+}
+
+// Theme Toggle Script
+function toggleTheme() {
+    const themeToggle = document.getElementById('theme-toggle-button');
+    const root = document.documentElement;
+
+    // Load saved theme preference
+    initializeTheme();
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+        if (root.getAttribute('theme') === "light") {
+            applyTheme("dark");
+        } else {
+            applyTheme("light");
+        }
+    });
+}
+
 // Initialize the page with the default values and setup event listeners
 function initializeSearchPage() {
     const params = new URLSearchParams(window.location.search);
@@ -96,6 +137,18 @@ function initializeSearchPage() {
         dropdownElement.value = dataType;
         handleDropdownChange();
     }
+
+    // Toggle theme
+    toggleTheme();
+
+    // Remove a tela de carregamento após todo o conteúdo ser carregado
+    const loadingOverlay = document.getElementById('loading-overlay');
+    if (loadingOverlay) {
+        // eait 0.3 second before removing the loading overlay
+        setTimeout(() => {
+            loadingOverlay.style.display = 'none';
+        }, 300);
+    }
 }
 
 // Initialize when DOM is fully loaded
@@ -104,4 +157,23 @@ document.addEventListener('DOMContentLoaded', initializeSearchPage);
 document.getElementById('menu-toggle').addEventListener('click', function() {
     const nav = document.querySelector('nav');
     nav.classList.toggle('active');
+});
+
+// Seleciona todas as âncoras na navbar
+const navLinks = document.querySelectorAll('a[href^="#"]');
+
+// Adiciona um evento de clique em cada link
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Previne o comportamento padrão de navegação da âncora
+        
+        const targetId = link.getAttribute('href'); // Pega o id da âncora
+        const targetElement = document.querySelector(targetId); // Seleciona o elemento correspondente
+        
+        // Rola suavemente até o elemento
+        targetElement.scrollIntoView({
+            behavior: 'smooth', // Rola suavemente
+            block: 'start' // Alinha o topo do elemento com o topo da tela
+        });
+    });
 });

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Rodrigo S. Targino">
+    <meta name="description" content="Assistant Professor of Statistics">
+
+    <title>Rodrigo S. Targino</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <!-- Include Academicons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" 
+        integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" 
+        crossorigin="anonymous">
+        
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+        integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" 
+        crossorigin="anonymous">
+    
+    <!-- Include Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    
+    <!-- Include Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <link rel="stylesheet" href="website/css/styles.css">
+    <script type="module" src="website/js/search_page.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./static/images/favicon.png" sizes="16x16" type="image/png">
+</head>
+<body>
+    <header id="header">
+        <!-- Navigation Bar with Anchors to Sections -->
+        <nav>
+            <a href="./" class="bold nav-permanent">Rodrigo S. Targino</a>
+
+            <a class="nav-options" href="./#header">Home</a>
+            <a class="nav-options" href="./#professional-experience-section">Experience</a>
+            <a class="nav-options" href="./#talks-section">Talks</a>
+            <a class="nav-options" href="./#publications-section">Publications</a>
+            <a class="nav-options" href="./#preprints-section">Preprints</a>
+            <a class="nav-options" href="./#students-section">Students</a>
+            <a class="nav-options" href="./#teaching-section">Teaching</a>
+            <a class="nav-options" href="./#contact-section">Contact</a>
+            <a class="nav-options" href=".\static\author_data\RodrigoSTarginoCV.pdf">CV</a>
+
+            <!-- Container para os botões -->
+            <a id="theme-toggle-button" class="icon-button">
+                <i class="fa fa-adjust"></i>
+            </a>
+
+            <!-- Ícone do Menu Hamburguer -->
+            <a class="menu-toggle" href="javascript:void(0);">
+                <i class="fas fa-bars"></i> <!-- Ícone do menu hamburguer -->
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Tela de Carregamento -->
+        <div id="loading-overlay">
+            <div class="loader"></div>
+        </div>
+
+        <section class="search-section">
+            <div class="search-controls">
+                <div class="search-filter">
+                    <select id="json-select" class="search-dropdown"></select>
+                </div>
+                <div class="search-input-container">
+                    <input type="text" id="search-input" class="search-field" placeholder="Type to search...">
+                    <i class="search-icon fas fa-search"></i>
+                </div>
+            </div>
+        </section>
+        
+        <section class="results-section">
+            <div id="search-results" class="search-results-container"></div>
+        </section>
+
+        <div id="articleModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+
+        <div id="citeModal" class="modal">
+            <div class="modal-content">
+                <span id="closeCiteModal" class="close">&times;</span>
+                <div id="citeModalContent"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
