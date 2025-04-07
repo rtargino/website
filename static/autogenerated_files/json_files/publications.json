@@ -1,4 +1,24 @@
 {
+    "duarte2025press": {
+        "abstract": "This study establishes press freedom as a novel financial risk factor by demonstrating its systematic effects on economic policy uncertainty and market volatility. Drawing on data from Freedom Houseâ€™s Freedom of the Press annual report across 12 countries, a Bayesian vector autoregression model is employed to infer a monthly implied measure of press freedom risk, enabling real-time tracking of its impact on financial markets. The findings reveal that press freedom shocks systematically increase economic policy uncertainty, particularly in politically sensitive economies, while their effect on market volatility varies: Some markets experience short-term stability due to information suppression, but instability rises in the long run. Moreover, press restrictions intensify during economic downturns, suggesting a procyclical link between media control and financial instability. These results underscore the importance of integrating press freedom risk into financial models, as constraints on media independence affect sovereign spreads, equity markets, and asset allocation decisions. Understanding this risk can help investors anticipate uncertainty spikes, refine hedging strategies, and enhance portfolio resilience in politically fragile markets.",
+        "year": "2025",
+        "url": "https://doi.org/10.3905/jpm.2025.1.705",
+        "author": "Duarte, Diogo and Rouxelin, Florent and Saporito, Yuri and Targino, Rodrigo",
+        "title": "Press Freedom as a Risk Factor: Effects on Volatility and Uncertainty",
+        "ENTRYTYPE": "article",
+        "ID": "duarte2025press"
+    },
+    "pesenti2024risk": {
+        "abstract": "We define and develop an approach for risk budgeting allocationâ€”a risk diversification portfolio strategyâ€”where risk is measured using a dynamic time-consistent risk measure. For this, we introduce a notion of dynamic risk contributions that generalize the classical Euler contributions, which allows us to obtain dynamic risk contributions in a recursive manner. We prove that for the class of coherent dynamic distortion risk measures, the risk allocation problem may be recast as a sequence of strictly convex optimization problems. Moreover, we show that self-financing dynamic risk budgeting strategies with initial wealth of one are scaled versions of the solution of the sequence of convex optimization problems. Furthermore, we develop an actor-critic approach, leveraging the elicitability of dynamic risk measures, to solve for risk budgeting strategies using deep learning.",
+        "url": "https://doi.org/10.1287/opre.2023.0299",
+        "publisher": "INFORMS",
+        "year": "2024",
+        "journal": "Operations Research",
+        "author": "Pesenti, Silvana M and Jaimungal, Sebastian and Saporito, Yuri F and Targino, Rodrigo S",
+        "title": "Risk budgeting allocation for dynamic risk measures",
+        "ENTRYTYPE": "article",
+        "ID": "pesenti2024risk"
+    },
     "dacosta2023risk": {
         "abstract": "Risk budgeting is a portfolio strategy where each asset contributes a prespecified amount to the aggregate risk of the portfolio. In this work, we propose a numerical framework that uses only simulations of returns for estimating risk budgeting portfolios. Specifically, we provide a Sample Average Approximation (SAA) algorithm with cutting planes, and a Stochastic Gradient Decent (SGD) algorithm, tailored to the risk budgeting portfolio for the Expected Shortfall. We illustrate different risk budgeting portfolios, constructed using a especially designed Julia package, on real financial data and compare it to classical portfolio strategies.",
         "url": "https://doi.org/10.1016/j.ejor.2023.06.003",
@@ -51,7 +71,7 @@
         "ID": "nieto2021"
     },
     "merkle2020bayesian": {
-        "abstract": "We propose a two stage procedure for the estimation of the parameters of a fairly general, continuous-time stochastic volatility model. An important ingredient of the proposed method is the Cuchiero–Teichmann volatility estimator, which is based on Fourier transforms and provides a continuous-time estimate of the latent process. This estimate is then used to construct an approximate likelihood for the parameters of interest, whose restrictions are taken into account through prior distributions. The procedure is shown to be highly successful for constructing the posterior distribution of the parameters of a Heston model, while limited success is achieved when applied to the highly parametrized exponential-Ornstein–Uhlenbeck.",
+        "abstract": "We propose a two stage procedure for the estimation of the parameters of a fairly general, continuous-time stochastic volatility model. An important ingredient of the proposed method is the Cuchieroâ€“Teichmann volatility estimator, which is based on Fourier transforms and provides a continuous-time estimate of the latent process. This estimate is then used to construct an approximate likelihood for the parameters of interest, whose restrictions are taken into account through prior distributions. The procedure is shown to be highly successful for constructing the posterior distribution of the parameters of a Heston model, while limited success is achieved when applied to the highly parametrized exponential-Ornsteinâ€“Uhlenbeck.",
         "doi": "https://doi.org/10.1016/j.spl.2019.108600",
         "publisher": "Elsevier",
         "year": "2020",
@@ -92,7 +112,7 @@
         "ID": "targino2017optimal"
     },
     "peters2017full": {
-        "abstract": "We revisit the gamma–gamma Bayesian chain-ladder (BCL) model for claims reserving in non-life insurance. This claims reserving model is usually used in an empirical Bayesian way using plug-in estimates for the variance parameters. The advantage of this empirical Bayesian framework is that allows us for closed form solutions. The main purpose of this paper is to develop the full Bayesian case also considering prior distributions for the variance parameters and to study the resulting sensitivities. ",
+        "abstract": "We revisit the gammaâ€“gamma Bayesian chain-ladder (BCL) model for claims reserving in non-life insurance. This claims reserving model is usually used in an empirical Bayesian way using plug-in estimates for the variance parameters. The advantage of this empirical Bayesian framework is that allows us for closed form solutions. The main purpose of this paper is to develop the full Bayesian case also considering prior distributions for the variance parameters and to study the resulting sensitivities. ",
         "doi": "http://dx.doi.org/10.1016/j.insmatheco.2016.12.007",
         "publisher": "Elsevier",
         "year": "2017",
