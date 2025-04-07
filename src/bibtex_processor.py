@@ -22,7 +22,7 @@ def load_bibtex(file_path):
     Returns:
         BibDatabase: A BibDatabase object containing the parsed BibTeX entries.
     """
-    with open(file_path) as bibtex_file:
+    with open(file_path, encoding='utf-8') as bibtex_file:
         return bibtexparser.load(bibtex_file)
 
 def save_bibtex_as_json(bibtex_entries, json_path):
@@ -67,7 +67,7 @@ def split_bibtex_entries(bibtex_entries, output_dir):
         output_file_path = os.path.join(output_dir, entry.get('ID', 'unknown_id') + '.bib')
 
         # Write the BibTeX content to a new file
-        with open(output_file_path, 'w') as bib_file:
+        with open(output_file_path, 'w', encoding='utf-8') as bib_file:
             bib_file.write(entry_bibtex_content)
 
         print(f"Entry saved to {output_file_path}")
