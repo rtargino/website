@@ -1,7 +1,7 @@
 ---
 name: Rodrigo S Targino
 address: "School of Applied Mathematics (EMAp),\\tabularnewline Getulio Vargas Foundation (FGV), \\tabularnewline Rio de Janeiro, RJ, Brazil."
-www: https://rtargino.github.io/website/
+www: rtargino.github.io/website/
 # phone: +61 3 9905 5141
 email: "rodrigo.targino@fgv.br"
 # twitter: robjhyndman
