@@ -1,13 +1,4 @@
 {
-    "mensuracao2025fraga": {
-        "abstract": "O método de mensuração de ativos financeiros em planos de previdência na modalidade de contribuição definida (CD, ou contribuição variável - CV, na fase de acumulação) tem implicações significativas se haverá transferência de riqueza entre os participantes. Em Dez/2024 foi publicada norma para as Entidades Fechadas de Previdência Complementar possibilitando o uso da marcação na curva de títulos públicos federais nos planos CD e CV na fase de acumulação. Este artigo quantifica o impacto financeiro nos participantes da adoção da marcação na curva (HTM – Hold to Maturity) nestes planos, utilizando dados reais da estrutura a termo da taxa de juros de cupom de IPCA para avaliar as transferências de riqueza resultantes dessa adoção. A análise evidencia como a marcação na curva gera assimetrias nos resultados financeiros, beneficiando alguns participantes em detrimento de outros. As transferências de riqueza ocorrem tanto em qualquer retirada de recursos quanto também na entrada (contribuições), inclusive realocações da carteira que impliquem venda ou compra de títulos. O uso do HTM de forma parcial ou a tentativa de imunização de saídas não eliminam por completo transferências de riqueza. Os resultados reforçam que, para fins de cotização, o uso da marcação a mercado (MTM - Mark to Market) de ativos em planos CD (e CV na fase de diferimento) evita transferências de riqueza e, por consequência, prejuízos financeiros aos seus participantes.",
-        "url": "https://ssrn.com/abstract=5205852",
-        "year": "2024",
-        "author": "Fraga L. de Melo, Eduardo and Targino, Rodrigo S.",
-        "title": "Mensuração da Transferência de Riqueza em Planos de Contribuição Definida com a Marcação de Ativos na Curva",
-        "ENTRYTYPE": "unpublished",
-        "ID": "mensuracao2025fraga"
-    },
     "actuarial2024fraga": {
         "abstract": "For the assessment of the financial soundness of a pension fund, it is necessary to take into account mortality forecasting so that longevity risk is consistently incorporated into future cash flows. In this article, we employ machine learning models applied to actuarial science (actuarial learning) to make mortality predictions for a relevant sample of pension funds' participants. Actuarial learning represents an emerging field that involves the application of machine learning (ML) and artificial intelligence (AI) techniques in actuarial science. This encompasses the use of algorithms and computational models to analyze large sets of actuarial data, such as regression trees, random forest, boosting, XGBoost, CatBoost, and neural networks (eg. FNN, LSTM, and MHA). Our results indicate that some ML/AI algorithms present competitive out-ofsample performance when compared to the classical Lee-Carter model. This may indicate interesting alternatives for consistent liability evaluation and effective pension fund risk management.",
         "url": "https://ssrn.com/abstract=",
@@ -34,14 +25,5 @@
         "title": "Conformal prediction for frequency-severity modeling",
         "ENTRYTYPE": "unpublished",
         "ID": "conformal2023"
-    },
-    "evangelista2021analise": {
-        "abstract": "Entender a contribuição de ativos individuais ou de grupos de ativos para o risco total de um determinado portfólio é imprescindível para uma gestão financeira moderna. Nesse artigo, usando um modelo estocástico para retornos que combina volatilidade estocástica, teoria dos valores extremos para as caudas e cópula para modelar a dependência entre os ativos, nós calculamos a contribuição marginal ao risco de 10 fundos de ações que obtiveram retornos significativos em 2020. Nossa análise mostra que, dependendo da composição do portfólio, alguns setores econômicos podem contribuir até 40\\% mais para o risco total do portfólio do que o risco observado quando os ativos são tratados de forma individual.",
-        "url": "https://papers.ssrn.com/abstract=3825680",
-        "year": "2021",
-        "author": "Evangelista, David and Saporito, Yuri F. and Targino, Rodrigo S.",
-        "title": "Uma análise do risco de fundos de ações brasileiros em 2020",
-        "ENTRYTYPE": "unpublished",
-        "ID": "evangelista2021analise"
     }
 }

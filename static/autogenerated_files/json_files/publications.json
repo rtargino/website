@@ -9,6 +9,15 @@
         "ENTRYTYPE": "article",
         "ID": "duarte2025press"
     },
+    "mensuracao2025fraga": {
+        "abstract": "O método de mensuração de ativos financeiros em planos de previdência na modalidade de contribuição definida (CD, ou contribuição variável - CV, na fase de acumulação) tem implicações significativas se haverá transferência de riqueza entre os participantes. Em Dez/2024 foi publicada norma para as Entidades Fechadas de Previdência Complementar possibilitando o uso da marcação na curva de títulos públicos federais nos planos CD e CV na fase de acumulação. Este artigo quantifica o impacto financeiro nos participantes da adoção da marcação na curva (HTM – Hold to Maturity) nestes planos, utilizando dados reais da estrutura a termo da taxa de juros de cupom de IPCA para avaliar as transferências de riqueza resultantes dessa adoção. A análise evidencia como a marcação na curva gera assimetrias nos resultados financeiros, beneficiando alguns participantes em detrimento de outros. As transferências de riqueza ocorrem tanto em qualquer retirada de recursos quanto também na entrada (contribuições), inclusive realocações da carteira que impliquem venda ou compra de títulos. O uso do HTM de forma parcial ou a tentativa de imunização de saídas não eliminam por completo transferências de riqueza. Os resultados reforçam que, para fins de cotização, o uso da marcação a mercado (MTM - Mark to Market) de ativos em planos CD (e CV na fase de diferimento) evita transferências de riqueza e, por consequência, prejuízos financeiros aos seus participantes.",
+        "url": "https://doi.org/10.12660/rbfin.v23n1.2025.93303",
+        "year": "2024",
+        "author": "Fraga L. de Melo, Eduardo and Targino, Rodrigo S.",
+        "title": "Mensuração da Transferência de Riqueza em Planos de Contribuição Definida com a Marcação de Ativos na Curva",
+        "ENTRYTYPE": "unpublished",
+        "ID": "mensuracao2025fraga"
+    },
     "pesenti2024risk": {
         "abstract": "We define and develop an approach for risk budgeting allocation—a risk diversification portfolio strategy—where risk is measured using a dynamic time-consistent risk measure. For this, we introduce a notion of dynamic risk contributions that generalize the classical Euler contributions, which allows us to obtain dynamic risk contributions in a recursive manner. We prove that for the class of coherent dynamic distortion risk measures, the risk allocation problem may be recast as a sequence of strictly convex optimization problems. Moreover, we show that self-financing dynamic risk budgeting strategies with initial wealth of one are scaled versions of the solution of the sequence of convex optimization problems. Furthermore, we develop an actor-critic approach, leveraging the elicitability of dynamic risk measures, to solve for risk budgeting strategies using deep learning.",
         "url": "https://doi.org/10.1287/opre.2023.0299",
@@ -78,7 +87,7 @@
         "year": "2020",
         "pages": "108600",
         "volume": "156",
-        "journal": "Statistics \\& Probability Letters",
+        "journal": "Statistics and Probability Letters",
         "author": "Merkle, Milan and Saporito, Yuri F and Targino, Rodrigo S",
         "title": "Bayesian approach for parameter estimation of continuous-time stochastic volatility models using Fourier transform methods",
         "ENTRYTYPE": "article",
@@ -93,7 +102,7 @@
         "number": "4",
         "volume": "5",
         "journal": "Risks",
-        "author": "Peters, Gareth W and Targino, Rodrigo S and W{\\\"u}thrich, Mario V",
+        "author": "Peters, Gareth W and Targino, Rodrigo S and Wuthrich, Mario V",
         "title": "Bayesian modelling, Monte Carlo sampling and capital allocation of insurance risks",
         "ENTRYTYPE": "article",
         "ID": "peters2017bayesian"
@@ -120,7 +129,7 @@
         "pages": "41--53",
         "volume": "73",
         "journal": "Insurance: Mathematics and Economics",
-        "author": "Peters, Gareth W and Targino, Rodrigo S and W{\\\"u}thrich, Mario V",
+        "author": "Peters, Gareth W and Targino, Rodrigo S and Wuthrich, Mario V",
         "title": "Full bayesian analysis of claims reserving uncertainty",
         "ENTRYTYPE": "article",
         "ID": "peters2017full"
