@@ -10,11 +10,13 @@
         "ID": "mensuracao2025fraga"
     },
     "duarte2025press": {
-        "abstract": "This study establishes press freedom as a novel financial risk factor by demonstrating its systematic effects on economic policy uncertainty and market volatility. Drawing on data from Freedom House’s Freedom of the Press annual report across 12 countries, a Bayesian vector autoregression model is employed to infer a monthly implied measure of press freedom risk, enabling real-time tracking of its impact on financial markets. The findings reveal that press freedom shocks systematically increase economic policy uncertainty, particularly in politically sensitive economies, while their effect on market volatility varies: Some markets experience short-term stability due to information suppression, but instability rises in the long run. Moreover, press restrictions intensify during economic downturns, suggesting a procyclical link between media control and financial instability. These results underscore the importance of integrating press freedom risk into financial models, as constraints on media independence affect sovereign spreads, equity markets, and asset allocation decisions. Understanding this risk can help investors anticipate uncertainty spikes, refine hedging strategies, and enhance portfolio resilience in politically fragile markets.",
+        "publisher": "Portfolio Management Research",
         "year": "2025",
+        "pages": "194--215",
+        "number": "7",
+        "volume": "51",
         "journal": "The Journal of Portfolio Management",
-        "url": "https://doi.org/10.3905/jpm.2025.1.705",
-        "author": "Duarte, Diogo and Rouxelin, Florent and Saporito, Yuri and Targino, Rodrigo",
+        "author": "Duarte, Diogo and Rouxelin, Florent and Saporito, Yuri F and Targino, Rodrigo",
         "title": "Press Freedom as a Risk Factor: Effects on Volatility and Uncertainty",
         "ENTRYTYPE": "article",
         "ID": "duarte2025press"
@@ -23,6 +25,9 @@
         "abstract": "We define and develop an approach for risk budgeting allocation—a risk diversification portfolio strategy—where risk is measured using a dynamic time-consistent risk measure. For this, we introduce a notion of dynamic risk contributions that generalize the classical Euler contributions, which allows us to obtain dynamic risk contributions in a recursive manner. We prove that for the class of coherent dynamic distortion risk measures, the risk allocation problem may be recast as a sequence of strictly convex optimization problems. Moreover, we show that self-financing dynamic risk budgeting strategies with initial wealth of one are scaled versions of the solution of the sequence of convex optimization problems. Furthermore, we develop an actor-critic approach, leveraging the elicitability of dynamic risk measures, to solve for risk budgeting strategies using deep learning.",
         "url": "https://doi.org/10.1287/opre.2023.0299",
         "publisher": "INFORMS",
+        "pages": "1208--1229",
+        "number": "3",
+        "volume": "73",
         "year": "2024",
         "journal": "Operations Research",
         "author": "Pesenti, Silvana M and Jaimungal, Sebastian and Saporito, Yuri F and Targino, Rodrigo S",
