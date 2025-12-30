@@ -16,32 +16,5 @@
         "title": "Reverse-BSDE Monte Carlo",
         "ENTRYTYPE": "unpublished",
         "ID": "batista2025reverse"
-    },
-    "actuarial2024fraga": {
-        "abstract": "For the assessment of the financial soundness of a pension fund, it is necessary to take into account mortality forecasting so that longevity risk is consistently incorporated into future cash flows. In this article, we employ machine learning models applied to actuarial science (actuarial learning) to make mortality predictions for a relevant sample of pension funds' participants. Actuarial learning represents an emerging field that involves the application of machine learning (ML) and artificial intelligence (AI) techniques in actuarial science. This encompasses the use of algorithms and computational models to analyze large sets of actuarial data, such as regression trees, random forest, boosting, XGBoost, CatBoost, and neural networks (eg. FNN, LSTM, and MHA). Our results indicate that some ML/AI algorithms present competitive out-ofsample performance when compared to the classical Lee-Carter model. This may indicate interesting alternatives for consistent liability evaluation and effective pension fund risk management.",
-        "url": "https://ssrn.com/abstract=5207809",
-        "year": "2024",
-        "author": "Fraga L. de Melo, Eduardo and Graziadei, Helton and Targino, Rodrigo S.",
-        "title": "Actuarial Learning for Pension Fund Mortality Forecasting",
-        "ENTRYTYPE": "unpublished",
-        "ID": "actuarial2024fraga"
-    },
-    "stochastic2023maia": {
-        "abstract": "This paper develops a general framework for stochastic modeling of goals and other events in football (soccer) matches. The events are modelled as Cox processes (doubly stochastic Poisson processes) where the event intensities may depend on all the modeled events as well as external factors. The model has a strictly concave log-likelihood function which facilitates its fitting to observed data. Besides event times, the model describes the random lengths of stoppage times which can have a strong influence on the final score of a match. The model is illustrated on eight years of data from Campeonato Brasileiro de Futebol Série A. We find that dynamic regressors significantly improve the in-game predictive power of the model. In particular, a) when a team receives a red card, its goal intensity decreases more than 30\\%; b) the goal rate of a team increases by 10\\% if it is losing by one goal and by 20\\% if its losing by two goals; and c) when the goal difference at the end of the second half is less than or equal to one, the stoppage time is on average more than one minute longer than in matches with a difference of two goals.",
-        "url": "https://arxiv.org/abs/2312.04338",
-        "year": "2023",
-        "author": "Maia, Luiz Fernando G. N. and Pennanen, Teemu and da Silva, Moacyr A. H. B. and Targino, Rodrigo S.",
-        "title": "Stochastic modelling of football matches",
-        "ENTRYTYPE": "unpublished",
-        "ID": "stochastic2023maia"
-    },
-    "conformal2023": {
-        "abstract": "We present a nonparametric model-agnostic framework for building prediction intervals of insurance claims, with finite sample statistical guarantees, extending the technique of split conformal prediction to the domain of two-stage frequency-severity modeling. The effectiveness of the framework is showcased with simulated and real datasets. When the underlying severity model is a random forest, we extend the two-stage split conformal prediction procedure, showing how the out-of-bag mechanism can be leveraged to eliminate the need for a calibration set and to enable the production of prediction intervals with adaptive width.",
-        "url": "https://arxiv.org/abs/2307.13124",
-        "year": "2023",
-        "author": "Graziadei, Helton and Marques F., Paulo C. and Fraga L. de Melo, Eduardo and Targino, Rodrigo S.",
-        "title": "Conformal prediction for frequency-severity modeling",
-        "ENTRYTYPE": "unpublished",
-        "ID": "conformal2023"
     }
 }

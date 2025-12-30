@@ -2,6 +2,54 @@
     "2025riskbudgeted": {
         "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
         "url": "",
+        "day": "03",
+        "month": "12",
+        "year": "2025",
+        "title": "Risk-Budgeted Mean Variance Portfolios ",
+        "journal": "20th Research in Options (RiO), Búzios, RJ, Brazil",
+        "author": "",
+        "ENTRYTYPE": "article",
+        "ID": "2025riskbudgeted"
+    },
+    "2025riskbudgeted2": {
+        "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
+        "url": "",
+        "day": "20",
+        "month": "11",
+        "year": "2025",
+        "title": "Risk-Budgeted Mean Variance Portfolios ",
+        "journal": "Department of Economics, UIUC, Urbana-Champaign, IL, USA",
+        "author": "",
+        "ENTRYTYPE": "article",
+        "ID": "2025riskbudgeted2"
+    },
+    "2025riskbudgeted3": {
+        "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
+        "url": "",
+        "day": "05",
+        "month": "11",
+        "year": "2025",
+        "title": "Risk-Budgeted Mean Variance Portfolios ",
+        "journal": "Workshop em Estatística, Séries Temporais e Finanças Quantitativas, Rio de Janeiro, RJ, Brazil",
+        "author": "",
+        "ENTRYTYPE": "article",
+        "ID": "2025riskbudgeted3"
+    },
+    "2025riskbudgeted4": {
+        "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
+        "url": "",
+        "day": "31",
+        "month": "08",
+        "year": "2025",
+        "title": "Risk-Budgeted Mean Variance Portfolios ",
+        "journal": "21a Escola de Séries Temprais (ESTE 2025), Campinas, SP, Brazil",
+        "author": "",
+        "ENTRYTYPE": "article",
+        "ID": "2025riskbudgeted4"
+    },
+    "2025riskbudgeted5": {
+        "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
+        "url": "",
         "day": "21",
         "month": "07",
         "year": "2025",
@@ -9,9 +57,9 @@
         "journal": "Mathematical Congress of the Americas 2025, Miami, FL, USA",
         "author": "",
         "ENTRYTYPE": "article",
-        "ID": "2025riskbudgeted"
+        "ID": "2025riskbudgeted5"
     },
-    "2025riskbudgeted2": {
+    "2025riskbudgeted6": {
         "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
         "url": "",
         "day": "18",
@@ -21,9 +69,9 @@
         "journal": "SIAM Financial Mathematics 2025, Miami, FL, USA",
         "author": "",
         "ENTRYTYPE": "article",
-        "ID": "2025riskbudgeted2"
+        "ID": "2025riskbudgeted6"
     },
-    "2025riskbudgeted3": {
+    "2025riskbudgeted7": {
         "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
         "url": "",
         "day": "30",
@@ -33,7 +81,7 @@
         "journal": "São Paulo School of Advanced Science on High Dimensional Modelling, São Paulo, Brazil",
         "author": "",
         "ENTRYTYPE": "article",
-        "ID": "2025riskbudgeted3"
+        "ID": "2025riskbudgeted7"
     },
     "2025challenges": {
         "abstract": "Agriculture accounts for 25% of Brazil's GDP, with soybeans being the most significant crop, yielding over 150 million tons in 2022/2023. However, soybean production is highly vulnerable to climate factors like drought and excessive rainfall, which impact yields and crop insurance pricing. This study uses actuarial learning models to predict soybean losses, incorporating weather variables such as rainfall and temperature. Generalized linear models and random forests are benchmarked within a two-stage frequency-severity framework for claim occurrence and severity prediction. We compare charged premiums with estimated premiums and conduct stress tests to assess weather-related risks during extreme events, such as those observed in the crop year 2022/23 in the Brazilian South and Central-West regions.",
