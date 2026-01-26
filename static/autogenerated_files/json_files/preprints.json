@@ -1,4 +1,13 @@
 {
+    "nieto2026negative": {
+        "url": "https://arxiv.org/abs/2601.05964",
+        "abstract": "Prediction of outstanding claims has been done via nonparametric models (chain ladder), semiparametric models (overdispersed poisson) or fully parametric models. In this paper, we propose models based on negative binomial distributions for the prediction of outstanding number of claims, which are particularly useful to account for overdispersion. We first assume independence of random variables and introduce appropriate notation. Later, we generalise the model to account for dependence across development years. In both cases, the marginal distributions are negative binomials. We study the properties of the models and carry out bayesian inference. We illustrate the performance of the models with simulated and real datasets.",
+        "year": "2026",
+        "author": "Nieto-Barajas, Luis E and Targino, Rodrigo S",
+        "title": "Negative binomial models for development triangles of counts",
+        "ENTRYTYPE": "unpublished",
+        "ID": "nieto2026negative"
+    },
     "analyzing2025fraga": {
         "url": "https://arxiv.org/abs/2506.03584",
         "abstract": "Pension fund populations often have mortality experiences that are substantially different from the national benchmark. In a motivating case study of Brazilian corporate pension funds, pensioners are observed to have mortality that is 40-55\\% below the national average, due to the underlying socioeconomic disparities. Direct analysis of a pension fund population is challenging due to very sparse data, with age-specific annual death counts often in low single digits. We design and study a collection of stochastic sub-population frameworks that coherently capture and project pensioner mortality rates via deflator factors relative to a reference population. Superseding parametric approaches, we propose Gaussian process (GP) based models that flexibly estimate Age- and/or Year-specific deflators. We demonstrate that the GP models achieve better goodness of fit and uncertainty quantification. Our models are illustrated on two Brazilian pension funds in the context of exogenous national and insurance industry mortality tables. The GP models are implemented in R Stan using a fully Bayesian approach and take into account over-dispersion relative to the Poisson likelihood.",
