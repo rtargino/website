@@ -1,6 +1,7 @@
 {
     "righi2026robust": {
         "url": "https://arxiv.org/abs/2603.24349",
+        "abstract": "We develop an averaging approach to robust risk measurement under payoff uncertainty. Instead of taking a worst-case value over an uncertainty neighborhood, we weight nearby payoffs more heavily under a chosen metric and average the baseline risk measure. We prove continuity in the neighborhood radius and provide a stable large-radius behavior. In Banach lattices, the approach leads to a convex risk measure and under separability of the space, a dual representation through a penalty term based on an inf-convolution taken over a Gelfand integral constraint. We also relate our veraging to aggregation at the distribution and quantile levels of payoffs, obtaining dominance and coincidence results. Numerical illustrations are conducted to verify calibration and sensitivity.",
         "year": "2026",
         "title": "Robust risk measures: an averaging approach",
         "author": "Righi, Marcelo and Targino, Rodrigo S.",
