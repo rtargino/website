@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+source .venv/bin/activate
+
 pip install -r ./src/requirements.txt
 python ./src/bibtex_processor.py
 
