@@ -3,10 +3,23 @@
         "url": "https://doi.org/10.1017/S1748499526100281",
         "abstract": "Pension fund populations often have mortality experiences that are substantially different from the national benchmark. In a motivating case study of Brazilian corporate pension funds, pensioners are observed to have mortality that is 40-55\\% below the national average, due to the underlying socioeconomic disparities. Direct analysis of a pension fund population is challenging due to very sparse data, with age-specific annual death counts often in low single digits. We design and study a collection of stochastic sub-population frameworks that coherently capture and project pensioner mortality rates via deflator factors relative to a reference population. Superseding parametric approaches, we propose Gaussian process (GP) based models that flexibly estimate Age- and/or Year-specific deflators. We demonstrate that the GP models achieve better goodness of fit and uncertainty quantification. Our models are illustrated on two Brazilian pension funds in the context of exogenous national and insurance industry mortality tables. The GP models are implemented in R Stan using a fully Bayesian approach and take into account over-dispersion relative to the Poisson likelihood.",
         "year": "2026",
+        "journal": "Annals of Actuarial Sciences",
         "author": "Fraga. L. de Melo, Eduardo and Ludkovski, Michael and Targino, Rodrigo S.",
         "title": "Analyzing pension fund mortality with Gaussian processes in a subpopulation framework",
         "ENTRYTYPE": "article",
         "ID": "analyzing2026fraga"
+    },
+    "stochastic2026maia": {
+        "abstract": "This paper develops a general framework for stochastic modeling of goals and other events in football (soccer) matches. The events are modelled as Cox processes (doubly stochastic Poisson processes) where the event intensities may depend on all the modeled events as well as external factors. The model has a strictly concave log-likelihood function which facilitates its fitting to observed data. Besides event times, the model describes the random lengths of stoppage times which can have a strong influence on the final score of a match. The model is illustrated on eight years of data from Campeonato Brasileiro de Futebol Série A. We find that dynamic regressors significantly improve the in-game predictive power of the model. In particular, a) when a team receives a red card, its goal intensity decreases more than 30\\%; b) the goal rate of a team increases by 10\\% if it is losing by one goal and by 20\\% if its losing by two goals; and c) when the goal difference at the end of the second half is less than or equal to one, the stoppage time is on average more than one minute longer than in matches with a difference of two goals.",
+        "volume": "April-June",
+        "pages": "691-707",
+        "journal": "International Journal of Forecasting",
+        "url": "https://doi.org/10.1016/j.ijforecast.2025.10.006",
+        "year": "2026",
+        "author": "Maia, Luiz Fernando G. N. and Pennanen, Teemu and da Silva, Moacyr A. H. B. and Targino, Rodrigo S.",
+        "title": "Stochastic modelling of football matches",
+        "ENTRYTYPE": "article",
+        "ID": "stochastic2026maia"
     },
     "pesenti2025risk": {
         "abstract": "We define and develop an approach for risk budgeting allocation—a risk diversification portfolio strategy—where risk is measured using a dynamic time-consistent risk measure. For this, we introduce a notion of dynamic risk contributions that generalize the classical Euler contributions, which allows us to obtain dynamic risk contributions in a recursive manner. We prove that for the class of coherent dynamic distortion risk measures, the risk allocation problem may be recast as a sequence of strictly convex optimization problems. Moreover, we show that self-financing dynamic risk budgeting strategies with initial wealth of one are scaled versions of the solution of the sequence of convex optimization problems. Furthermore, we develop an actor-critic approach, leveraging the elicitability of dynamic risk measures, to solve for risk budgeting strategies using deep learning.",
@@ -21,16 +34,6 @@
         "title": "Risk budgeting allocation for dynamic risk measures",
         "ENTRYTYPE": "article",
         "ID": "pesenti2025risk"
-    },
-    "stochastic2025maia": {
-        "abstract": "This paper develops a general framework for stochastic modeling of goals and other events in football (soccer) matches. The events are modelled as Cox processes (doubly stochastic Poisson processes) where the event intensities may depend on all the modeled events as well as external factors. The model has a strictly concave log-likelihood function which facilitates its fitting to observed data. Besides event times, the model describes the random lengths of stoppage times which can have a strong influence on the final score of a match. The model is illustrated on eight years of data from Campeonato Brasileiro de Futebol Série A. We find that dynamic regressors significantly improve the in-game predictive power of the model. In particular, a) when a team receives a red card, its goal intensity decreases more than 30\\%; b) the goal rate of a team increases by 10\\% if it is losing by one goal and by 20\\% if its losing by two goals; and c) when the goal difference at the end of the second half is less than or equal to one, the stoppage time is on average more than one minute longer than in matches with a difference of two goals.",
-        "journal": "International Journal of Forecasting",
-        "url": "https://doi.org/10.1016/j.ijforecast.2025.10.006",
-        "year": "2025",
-        "author": "Maia, Luiz Fernando G. N. and Pennanen, Teemu and da Silva, Moacyr A. H. B. and Targino, Rodrigo S.",
-        "title": "Stochastic modelling of football matches",
-        "ENTRYTYPE": "article",
-        "ID": "stochastic2025maia"
     },
     "conformal2025graziadei": {
         "abstract": "We present a nonparametric model-agnostic framework for building prediction intervals of insurance claims, with finite sample statistical guarantees, extending the technique of split conformal prediction to the domain of two-stage frequency-severity modeling. The effectiveness of the framework is showcased with simulated and real datasets. When the underlying severity model is a random forest, we extend the two-stage split conformal prediction procedure, showing how the out-of-bag mechanism can be leveraged to eliminate the need for a calibration set and to enable the production of prediction intervals with adaptive width.",
