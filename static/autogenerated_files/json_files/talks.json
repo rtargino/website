@@ -1,4 +1,16 @@
 {
+    "2026riskbudgeted": {
+        "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
+        "url": "",
+        "day": "05",
+        "month": "05",
+        "year": "2026",
+        "title": "Risk-Budgeted Mean Variance Portfolios ",
+        "journal": "5th Rio-São Paulo Econometrics Workshop, Rio de Janeiro, RJ, Brazil",
+        "author": "",
+        "ENTRYTYPE": "article",
+        "ID": "2026riskbudgeted"
+    },
     "2025riskbudgeted": {
         "abstract": "We introduce the Risk-Budgeted Mean-Variance (RBMV) portfolio, a novel framework that\nconnects the classical Markowitz mean-variance problem and the risk budgeting approach. By\nmodifying the risk budgeting optimization problem to include constraints on expected returns\nand volatility, RBMV offers a disciplined way to manage the trade-off between risk concentration\nand return maximization. The investor gains a lever to adjust how close the portfolio sits to either\nframework, depending on her preferences. We show that the optimization problem that defines\nthe RBMV portfolio is convex, efficiently computable, and typically delivers competitive returns\nwith reduced risk concentration in the context of long-only portfolios. We illustrate our methodology\nusing daily equity returns from the U.S. and show that our methodology efficiently controls\nthe volatility of returns while also delivering Sharpe ratios that are consistently higher than the\ntraditional mean-variance approach.",
         "url": "",
