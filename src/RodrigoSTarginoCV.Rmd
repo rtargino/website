@@ -34,6 +34,7 @@ library(vitae)
 ```{r bibfiles}
 # Read any bib files
 pubs <- bibliography_entries("../static/bib_files/publications.bib")
+pubs_port <- bibliography_entries("../static/bib_files/publications_port.bib")
 preprints = bibliography_entries("../static/bib_files/preprints.bib")
 talks <- bibliography_entries("../static/bib_files/talks.bib")
 ```
@@ -203,7 +204,7 @@ editorial %>%
 
 ## Journals
 
-Risks, Journal of Risk and Financial Management, Computation and Applied Mathematics, Brazilian Review of Econometrics, ASTIN Bulletin, Journal of Banking and Finance, Sustainability, Quantitative Finance, Revista Contabilidade & Finanças, Brazilian Review of Finance, International Journal of Forecasting, Applied Stochastic Models in Business and Industry, Computational Statistics, Annals of Actuarial Science, European Actuarial Journal, Variance, Methodology and Computing in Applied Probability, Annals of Operations Research
+Risks, Journal of Risk and Financial Management, Computation and Applied Mathematics, Brazilian Review of Econometrics, ASTIN Bulletin, Journal of Banking and Finance, Sustainability, Quantitative Finance, Revista Contabilidade & Finanças, Brazilian Review of Finance, International Journal of Forecasting, Applied Stochastic Models in Business and Industry, Computational Statistics, Annals of Actuarial Science, European Actuarial Journal, Variance, Methodology and Computing in Applied Probability, Annals of Operations Research, Canadian Journal of Statistics
 
 ## Funding agencies
 
@@ -235,6 +236,15 @@ pubs %>%
   filter(type == "article-journal") %>%
   arrange(desc(issued))
 ```
+
+## Publications in Portuguese
+```{r research-papers-port}
+# Normal articles excluding editorials
+pubs_port %>%
+  filter(type == "article-journal") %>%
+  arrange(desc(issued))
+```
+
 
 ## Working papers under revision or review
 
