@@ -127,6 +127,8 @@ A ferramenta AutomatedCV foi desenvolvida para facilitar a gestão e exibição 
     ./updateCVfiles.sh
     ```
 
+    - O script funciona em Linux e Windows (via Git Bash). Se a pasta `.venv` não existir, ele a cria automaticamente. Requer Python, R (com os pacotes usados no `.Rmd` e o pacote `pandoc`) e uma distribuição LaTeX (TeX Live no Linux, MiKTeX no Windows).
+
 3. **Verifique os Arquivos Gerados**:
     - Certifique-se de que os arquivos `RodrigoSTarginoCV.pdf` e `RodrigoSTarginoCV_short.pdf` foram atualizados corretamente na pasta `static/author_data`.
 
